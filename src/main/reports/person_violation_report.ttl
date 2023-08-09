@@ -1,0 +1,46 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix ex:   <http://example.com/ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+[ rdf:type     sh:ValidationReport ;
+  sh:conforms  false ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  ex:Calvin ;
+                 sh:resultMessage              "ClassConstraint[<http://example.com/ns#Company>]: Expected class :<http://example.com/ns#Company> for <http://example.com/ns#UntypedCompany>" ;
+                 sh:resultPath                 ex:worksFor ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:ClassConstraintComponent ;
+                 sh:sourceShape                []  ;
+                 sh:value                      ex:UntypedCompany
+               ] ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  ex:Calvin ;
+                 sh:resultMessage              "Closed[http://example.com/ns#worksFor, http://example.com/ns#ssn][http://www.w3.org/1999/02/22-rdf-syntax-ns#type] Property = <http://example.com/ns#birthDate> : Object = \"1971-07-07\"^^xsd:date" ;
+                 sh:resultPath                 ex:birthDate ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:ClosedConstraintComponent ;
+                 sh:sourceShape                ex:PersonShape ;
+                 sh:value                      "1971-07-07"^^xsd:date
+               ] ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  ex:Alice ;
+                 sh:resultMessage              "Pattern[^\\d{3}-\\d{2}-\\d{4}$]: Does not match: '987-65-432A'" ;
+                 sh:resultPath                 ex:ssn ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:PatternConstraintComponent ;
+                 sh:sourceShape                _:b0 ;
+                 sh:value                      "987-65-432A"
+               ] ;
+  sh:result    [ rdf:type                      sh:ValidationResult ;
+                 sh:focusNode                  ex:Bob ;
+                 sh:resultMessage              "maxCount[1]: Invalid cardinality: expected max 1: Got count = 2" ;
+                 sh:resultPath                 ex:ssn ;
+                 sh:resultSeverity             sh:Violation ;
+                 sh:sourceConstraintComponent  sh:MaxCountConstraintComponent ;
+                 sh:sourceShape                _:b0
+               ]
+] .

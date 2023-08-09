@@ -1,0 +1,194 @@
+{
+  "@graph" : [ {
+    "@id" : "trusted-cloud:DataProtectionOfficer",
+    "@type" : "vcard:Agent",
+    "address" : "(ACME street 4, 55555 city, Germany)",
+    "email" : "michael.johnson@acme.com",
+    "family-name" : "Johnson",
+    "given-name" : "Michael",
+    "image" : "dp-officer-image",
+    "nickname" : "MJ",
+    "position" : "Data Protection Officer",
+    "tel" : "49-777777777"
+  }, {
+    "@id" : "trusted-cloud:HeadquarterAddress",
+    "@type" : "vcard:Address",
+    "country-name" : "DE",
+    "vcard:number" : 400,
+    "vcard:postal-code" : 50000,
+    "street-address" : "Main Street 123"
+  }, {
+    "@id" : "trusted-cloud:ITDepartmentContact",
+    "@type" : "vcard:Agent",
+    "address" : "(ACME street 1, 12345 city, Germany)",
+    "email" : "tom.mustermann@acme.com",
+    "family-name" : "Mustermann",
+    "given-name" : "Tom",
+    "image" : "image",
+    "nickname" : "nickname",
+    "position" : "Developer",
+    "tel" : "49-123456789"
+  }, {
+    "@id" : "trusted-cloud:LegalContact",
+    "@type" : "vcard:Agent",
+    "address" : "(ACME street 4, 54321 city, Germany)",
+    "email" : "michael.johnson@acme.com",
+    "family-name" : "Johnson",
+    "given-name" : "Michael",
+    "image" : "profile-pic",
+    "nickname" : "MJ",
+    "position" : "Legal Counsel",
+    "tel" : "49-999999999"
+  }, {
+    "@id" : "trusted-cloud:MainContact",
+    "@type" : "vcard:Agent",
+    "address" : "(ACME street 5, 77777 city, Germany)",
+    "email" : "emily.anderson@acme.com",
+    "family-name" : "Anderson",
+    "given-name" : "Emily",
+    "image" : "main-contact-image",
+    "nickname" : "EA",
+    "position" : "Sales Manager",
+    "tel" : "49-222222222"
+  }, {
+    "@id" : "trusted-cloud:ManagingDirector",
+    "@type" : "vcard:Agent",
+    "address" : "(ACME street 1, 12345 city, Germany)",
+    "email" : "john.doe@acme.com",
+    "family-name" : "Doe",
+    "given-name" : "John",
+    "image" : "Directorimage",
+    "nickname" : "Doedo",
+    "position" : "Director",
+    "tel" : "49-123456789"
+  }, {
+    "@id" : "trusted-cloud:ExampleInstance",
+    "@type" : "trusted-cloud:ProviderLegalInformation",
+    "dataProtectionOfficer" : "trusted-cloud:DataProtectionOfficer",
+    "description" : "A company making everything",
+    "emailAddress" : "Company@de.com",
+    "headquarterAddress" : "trusted-cloud:HeadquarterAddress",
+    "itDepartmentContact" : "trusted-cloud:ITDepartmentContact",
+    "legalContact" : "trusted-cloud:LegalContact",
+    "legalForm" : "GmbH",
+    "legalName" : "ABC",
+    "logo" : "http://www.acme.com/logo",
+    "mainContact" : "trusted-cloud:MainContact",
+    "managingDirector" : "trusted-cloud:ManagingDirector",
+    "registrationDate" : "2021-10-18T12:00:00+01:00",
+    "registrationNumber" : "DEK1234R.HRB123456",
+    "trusted-cloud:sme" : true,
+    "typeOfApplication" : "Cloud Service",
+    "vatNumber" : "DE999999999",
+    "webAddress" : "http://www.acme.com"
+  } ],
+  "@context" : {
+    "address" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#address"
+    },
+    "image" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#image"
+    },
+    "position" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#position"
+    },
+    "nickname" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#nickname"
+    },
+    "tel" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#tel"
+    },
+    "email" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#email",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "family-name" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#family-name"
+    },
+    "given-name" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#given-name"
+    },
+    "managingDirector" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#managingDirector",
+      "@type" : "@id"
+    },
+    "headquarterAddress" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#headquarterAddress",
+      "@type" : "@id"
+    },
+    "legalContact" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#legalContact",
+      "@type" : "@id"
+    },
+    "sme" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#sme",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "emailAddress" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#emailAddress"
+    },
+    "legalName" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#legalName"
+    },
+    "registrationNumber" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#registrationNumber"
+    },
+    "mainContact" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#mainContact",
+      "@type" : "@id"
+    },
+    "vatNumber" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#vatNumber"
+    },
+    "logo" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#logo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "registrationDate" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#registrationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "dataProtectionOfficer" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#dataProtectionOfficer",
+      "@type" : "@id"
+    },
+    "typeOfApplication" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#typeOfApplication"
+    },
+    "description" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#description"
+    },
+    "webAddress" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#webAddress",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "legalForm" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#legalForm"
+    },
+    "itDepartmentContact" : {
+      "@id" : "http://example.com/vocabulary/trusted-cloud#itDepartmentContact",
+      "@type" : "@id"
+    },
+    "country-name" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#country-name"
+    },
+    "postal-code" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#postal-code",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "number" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#number",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "street-address" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#street-address"
+    },
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sh" : "http://www.w3.org/ns/shacl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "gax-validation" : "http://example.com/validation#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "trusted-cloud" : "http://example.com/vocabulary/trusted-cloud#",
+    "vcard" : "http://www.w3.org/2006/vcard/ns#"
+  }
+}

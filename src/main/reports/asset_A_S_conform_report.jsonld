@@ -1,0 +1,6508 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "rdf:type" : {
+      "@id" : "aas:OperationVariable"
+    },
+    "value" : "_:b1"
+  }, {
+    "@id" : "_:b1",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "semanticId" : "_:b406",
+    "aas:Property/value" : "http://acplt.org/ValueId/ExampleValueId",
+    "valueId" : "_:b411",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "CONSTANT",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property objec"
+    } ],
+    "idShort" : "ExampleProperty1"
+  }, {
+    "@id" : "_:b10",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "aas:Property/value" : "ExampleProperty",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "idShort" : "ExampleProperty"
+  }, {
+    "@id" : "_:b100",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelElementCollections/ExampleSubmodelElementCollectionOrdered"
+  }, {
+    "@id" : "_:b101",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Mandatory"
+  }, {
+    "@id" : "_:b102",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b31",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b103",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElement"
+    },
+    "semanticId" : "_:b105",
+    "aas:Property/value" : "978-8234-234-342",
+    "valueId" : "_:b104",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Bezeichnung für eine natürliche oder juristische Person, die für die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation."
+    } ],
+    "idShort" : "InstanceId"
+  }, {
+    "@id" : "_:b104",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b461",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b105",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b65",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b106",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "semanticId" : "_:b110",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel SubmodelElementCollectionUnordered  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example SubmodelElementCollectionUnordered  object"
+    } ],
+    "idShort" : "ExampleSubmodelCollectionOrdered",
+    "aas:SubmodelElementCollection/value" : [ {
+      "@id" : "_:b107"
+    }, {
+      "@id" : "_:b108"
+    }, {
+      "@id" : "_:b109"
+    } ]
+  }, {
+    "@id" : "_:b107",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElement"
+    },
+    "semanticId" : "_:b102",
+    "max" : "100",
+    "min" : "0",
+    "aas:Range/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/INT"
+    },
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Rang  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Rang  object"
+    } ],
+    "idShort" : "ExampleRang"
+  }, {
+    "@id" : "_:b108",
+    "rdf:type" : {
+      "@id" : "aas:MultiLanguageProperty"
+    },
+    "semanticId" : "_:b206",
+    "aas:MultiLanguageProperty/value" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel für ein MultiLanguageProperty-Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example of MultiLanguageProperty element"
+    } ],
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel für ein MultiLanguageProperty-Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example of MultiLanguageProperty element"
+    } ],
+    "idShort" : "ExampleMultiLanguageProperty"
+  }, {
+    "@id" : "_:b109",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "semanticId" : "_:b416",
+    "aas:Property/value" : "exampleValue",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "qualifiers" : "_:b415",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property  object"
+    } ],
+    "idShort" : "ExampleProperty"
+  }, {
+    "@id" : "_:b110",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b419",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b111",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b112",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b112",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/RelationshipElements/ExampleAnnotatedRelationshipElement"
+  }, {
+    "@id" : "_:b113",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Mandatory"
+  }, {
+    "@id" : "_:b114",
+    "rdf:type" : {
+      "@id" : "aas:RelationshipElement"
+    },
+    "semanticId" : "_:b117",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel RelationshipElement Elemen"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example RelationshipElement object"
+    } ],
+    "idShort" : "ExampleRelationshipElement",
+    "aas:RelationshipElement/first" : {
+      "@id" : "_:b116"
+    },
+    "second" : "_:b115"
+  }, {
+    "@id" : "_:b115",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b158", "_:b84", "_:b270" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b116",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b129", "_:b135", "_:b356" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b117",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b294",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b118",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b119", "_:b120", "_:b101" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b119",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b120",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b124",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b125",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b125",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Files/ExampleFile"
+  }, {
+    "@id" : "_:b128",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Missingy"
+  }, {
+    "@id" : "_:b129",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b13",
+    "rdf:type" : {
+      "@id" : "aas:Blob"
+    },
+    "contentType" : "application/pdf",
+    "semanticId" : "_:b14",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Blob  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Blob  object"
+    } ],
+    "idShort" : "ExampleBlob"
+  }, {
+    "@id" : "_:b130",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b131",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b131",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b132",
+    "rdf:type" : {
+      "@id" : "aas:Range"
+    },
+    "max" : "",
+    "min" : "",
+    "aas:Range/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/Int"
+    },
+    "idShort" : "ExampleRange"
+  }, {
+    "@id" : "_:b133",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b134",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b134",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Operations/ExampleOperation"
+  }, {
+    "@id" : "_:b135",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b136",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ReferenceElements/ConceptDescriptionX"
+  }, {
+    "@id" : "_:b137",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/DataSpecifications/Conceptdescription/TestConceptDescription"
+  }, {
+    "@id" : "_:b138",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "0173-1#02-AAO677#002"
+  }, {
+    "@id" : "_:b139",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b14",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b18",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b140",
+    "rdf:type" : {
+      "@id" : "aas:RelationshipElement"
+    },
+    "idShort" : "ExampleRelationshipElement",
+    "aas:RelationshipElement/first" : {
+      "@id" : "_:b118"
+    },
+    "second" : "_:b141"
+  }, {
+    "@id" : "_:b141",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b261", "_:b325", "_:b37" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b142",
+    "rdf:type" : {
+      "@id" : "aas:OperationVariable"
+    },
+    "value" : "_:b143"
+  }, {
+    "@id" : "_:b143",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "semanticId" : "_:b285",
+    "aas:Property/value" : "exampleValue",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "qualifiers" : "_:b284",
+    "category" : "CONSTANT",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property objec"
+    } ],
+    "idShort" : "ExampleProperty2"
+  }, {
+    "@id" : "_:b144",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Mandatory"
+  }, {
+    "@id" : "_:b147",
+    "rdf:type" : {
+      "@id" : "aas:DataSpecificationContent"
+    },
+    "dataType" : "aas:DataTypeIEC61360/REAL_MEASURE",
+    "definition" : [ {
+      "@language" : "en-us",
+      "@value" : "Dies ist eine Data Specification für Testzwecke"
+    }, {
+      "@language" : "de",
+      "@value" : "Dies ist eine Data Specification für Testzwecke"
+    } ],
+    "levelType" : "aas:LevelType/MAX",
+    "preferredName" : [ {
+      "@language" : "de",
+      "@value" : "TestSpecification"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Test Specification"
+    } ],
+    "shortName" : [ {
+      "@language" : "de",
+      "@value" : "TestSpec"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Test Spec"
+    } ],
+    "sourceOfDefinition" : "http://acplt.org/DataSpec/ExampleDef",
+    "symbol" : "SU",
+    "unit" : "SpaceUnit",
+    "unitId" : "_:b148",
+    "aas:DataSpecificationIEC61360/value" : "TEST",
+    "valueFormat" : "SstringU",
+    "valueList" : "_:b41"
+  }, {
+    "@id" : "_:b148",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b271",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b15",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ValueId/ExampleValueId"
+  }, {
+    "@id" : "_:b150",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/AssetAdministrationShell",
+    "aas:Key/value" : "https://acplt.org/Test_Asset2"
+  }, {
+    "@id" : "_:b158",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty2"
+  }, {
+    "@id" : "_:b159",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b16",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b160",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b161",
+    "rdf:type" : {
+      "@id" : "aas:Qualifier"
+    },
+    "aas:Qualifier/type" : "http://acplt.org/Qualifier/ExampleQualifier2",
+    "aas:Qualifier/value" : "50",
+    "aas:Qualifier/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/Int"
+    }
+  }, {
+    "@id" : "_:b162",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b163",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b163",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ValueId/ExampleValueId"
+  }, {
+    "@id" : "_:b164",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b21",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b165",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/MultiLanguageProperties/ExampleMultiLanguageProperty"
+  }, {
+    "@id" : "_:b166",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b167",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Missing"
+  }, {
+    "@id" : "_:b168",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b169",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b170", "_:b171", "_:b34" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b17",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelTemplates/ExampleSubmodel"
+  }, {
+    "@id" : "_:b170",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/MultiLanguageProperty",
+    "aas:Key/value" : "ExampleMultiLanguageProperty"
+  }, {
+    "@id" : "_:b171",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b174",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b175",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b175",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "http://acplt.org/Submodels/Assets/TestAsset/Identification"
+  }, {
+    "@id" : "_:b177",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b349",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b178",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b409",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b179",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b18",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Blobs/ExampleBlob"
+  }, {
+    "@id" : "_:b180",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/RelationshipElements/ExampleAnnotatedRelationshipElement"
+  }, {
+    "@id" : "_:b181",
+    "rdf:type" : {
+      "@id" : "aas:Entity"
+    },
+    "entityType" : "aas:EntityType/CoManagedEntity",
+    "statements" : [ "_:b182", "_:b183" ],
+    "semanticId" : "_:b184",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Bezeichnung für eine natürliche oder juristische Person, die für die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation."
+    } ],
+    "idShort" : "ExampleEntity"
+  }, {
+    "@id" : "_:b182",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "semanticId" : "_:b240",
+    "aas:Property/value" : "http://acplt.org/ValueId/ExampleValueId",
+    "valueId" : "_:b330",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property object"
+    } ],
+    "idShort" : "ExampleProperty"
+  }, {
+    "@id" : "_:b183",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "semanticId" : "_:b348",
+    "aas:Property/value" : "http://acplt.org/ValueId/ExampleValue2",
+    "valueId" : "_:b437",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property object"
+    } ],
+    "idShort" : "ExampleProperty2"
+  }, {
+    "@id" : "_:b184",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b80",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b185",
+    "rdf:type" : {
+      "@id" : "aas:Capability"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b405",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Capability  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Capability  object"
+    } ],
+    "idShort" : "ExampleCapability"
+  }, {
+    "@id" : "_:b186",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "revision" : "0",
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b187",
+    "rdf:type" : {
+      "@id" : "aas:BasicEventElement"
+    },
+    "direction" : "aas:Direction/Input",
+    "observed" : "_:b95",
+    "state" : "aas:StateOfEvent/On",
+    "semanticId" : "_:b394",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel BasicEvent Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example BasicEvent object"
+    } ],
+    "idShort" : "ExampleBasicEvent"
+  }, {
+    "@id" : "_:b188",
+    "rdf:type" : {
+      "@id" : "aas:Operation"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b438",
+    "inoutputVariables" : "_:b453",
+    "inputVariables" : "_:b329",
+    "outputVariables" : "_:b142",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Operation Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Operation object"
+    } ],
+    "idShort" : "ExampleOperation"
+  }, {
+    "@id" : "_:b189",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b203",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b19",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b20",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b190",
+    "rdf:type" : {
+      "@id" : "aas:AnnotatedRelationshipElement"
+    },
+    "annotations" : "_:b244",
+    "semanticId" : "_:b247",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel AnnotatedRelationshipElement Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example AnnotatedRelationshipElement object"
+    } ],
+    "idShort" : "ExampleAnnotatedRelationshipElement",
+    "aas:RelationshipElement/first" : {
+      "@id" : "_:b402"
+    },
+    "second" : "_:b169"
+  }, {
+    "@id" : "_:b191",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "semanticId" : "_:b435",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel SubmodelElementCollectionUnordered  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example SubmodelElementCollectionUnordered  object"
+    } ],
+    "idShort" : "ExampleSubmodelCollectionOrdered",
+    "aas:SubmodelElementCollection/value" : [ {
+      "@id" : "_:b287"
+    }, {
+      "@id" : "_:b457"
+    }, {
+      "@id" : "_:b458"
+    }, {
+      "@id" : "_:b297"
+    } ]
+  }, {
+    "@id" : "_:b192",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b193",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b193",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b195",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelElementCollections/ExampleSubmodelElementCollectionOrdered"
+  }, {
+    "@id" : "_:b196",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b199",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b200", "_:b159", "_:b144" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b20",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b200",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b201",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ValueId/ExampleValueId"
+  }, {
+    "@id" : "_:b202",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "revision" : "0",
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b203",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelTemplates/ExampleSubmodel"
+  }, {
+    "@id" : "_:b206",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b300",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b207",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b208",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b212",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel SubmodelElementCollectionOrdered Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example SubmodelElementCollectionOrdered object"
+    } ],
+    "idShort" : "ExampleSubmodelCollectionOrdered",
+    "aas:SubmodelElementCollection/value" : [ {
+      "@id" : "_:b209"
+    }, {
+      "@id" : "_:b210"
+    }, {
+      "@id" : "_:b211"
+    } ]
+  }, {
+    "@id" : "_:b209",
+    "rdf:type" : {
+      "@id" : "aas:Blob"
+    },
+    "contentType" : "application/pdf",
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b369",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel ProperBlobty Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Blob object"
+    } ],
+    "idShort" : "ExampleBlob"
+  }, {
+    "@id" : "_:b21",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ValueId/ACPLT"
+  }, {
+    "@id" : "_:b210",
+    "rdf:type" : {
+      "@id" : "aas:File"
+    },
+    "aas:File/contentType" : "application/pdf",
+    "aas:File/value" : "file:///TestFile.pdf",
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b466",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel File Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example File object"
+    } ],
+    "idShort" : "ExampleFile"
+  }, {
+    "@id" : "_:b211",
+    "rdf:type" : {
+      "@id" : "aas:ReferenceElement"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b326",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel ReferenceElement Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example ReferenceElement object"
+    } ],
+    "idShort" : "ExampleReferenceElement"
+  }, {
+    "@id" : "_:b212",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b100",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b213",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b214",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b214",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "http://acplt.org/SubmodelTemplates/AssetIdentification"
+  }, {
+    "@id" : "_:b215",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b15",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b216",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Ranges/ExampleRange"
+  }, {
+    "@id" : "_:b217",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b218",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b218",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelElementCollections/ExampleSubmodelElementCollectionUnordered"
+  }, {
+    "@id" : "_:b219",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b22",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b23",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b222",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b223",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/MultiLanguageProperty",
+    "aas:Key/value" : "ExampleMultiLanguageProperty"
+  }, {
+    "@id" : "_:b224",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b225",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelElementCollections/ExampleSubmodelElementCollectionOrdered"
+  }, {
+    "@id" : "_:b229",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Blobs/ExampleBlob"
+  }, {
+    "@id" : "_:b23",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/AssetAdministrationShell",
+    "aas:Key/value" : "https://acplt.org/TestAssetAdministrationShell2"
+  }, {
+    "@id" : "_:b230",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b231",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b231",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b232",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b233",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelElementCollections/ExampleSubmodelElementCollectionOrdered"
+  }, {
+    "@id" : "_:b234",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b235",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b235",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b236",
+    "rdf:type" : {
+      "@id" : "aas:Qualifier"
+    },
+    "aas:Qualifier/type" : "http://acplt.org/Qualifier/ExampleQualifier",
+    "aas:Qualifier/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/String"
+    }
+  }, {
+    "@id" : "_:b237",
+    "rdf:type" : {
+      "@id" : "aas:MultiLanguageProperty"
+    },
+    "semanticId" : "_:b239",
+    "aas:MultiLanguageProperty/value" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel MultiLanguageProperty-Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example MultiLanguageProperty  object"
+    } ],
+    "valueId" : "_:b238",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel MultiLanguageProperty-Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example MultiLanguageProperty  object"
+    } ],
+    "idShort" : "ExampleProperty"
+  }, {
+    "@id" : "_:b238",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b413",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b239",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b420",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b240",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b219",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b243",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Events/ExampleBasicEvent"
+  }, {
+    "@id" : "_:b244",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "kind" : "aas:ModelingKind/Instance",
+    "aas:Property/value" : "some example annotation",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "Parameter",
+    "idShort" : "ExampleProperty3"
+  }, {
+    "@id" : "_:b247",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b180",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b25",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b26",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b250",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ValueId/ExampleValueId"
+  }, {
+    "@id" : "_:b251",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b252", "_:b253", "_:b254" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b252",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b253",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b254",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel"
+  }, {
+    "@id" : "_:b255",
+    "rdf:type" : {
+      "@id" : "aas:BasicEventElement"
+    },
+    "direction" : "aas:Direction/Output",
+    "observed" : "_:b257",
+    "state" : "aas:StateOfEvent/Off",
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b256",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "en-us",
+      "@value" : "Example BasicEvent object"
+    }, {
+      "@language" : "de",
+      "@value" : "Beispiel BasicEvent Element"
+    } ],
+    "idShort" : "ExampleBasicEvent"
+  }, {
+    "@id" : "_:b256",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b243",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b257",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b166",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b258",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b259",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b259",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ReferenceElements/ExampleReferenceElement"
+  }, {
+    "@id" : "_:b26",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Missing"
+  }, {
+    "@id" : "_:b260",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Missing"
+  }, {
+    "@id" : "_:b261",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/MultiLanguageProperty",
+    "aas:Key/value" : "ExampleMultiLanguageProperty"
+  }, {
+    "@id" : "_:b262",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b378",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b263",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "revision" : "0.0",
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b264",
+    "rdf:type" : {
+      "@id" : "aas:AnnotatedRelationshipElement"
+    },
+    "annotations" : "_:b460",
+    "semanticId" : "_:b111",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel AnnotatedRelationshipElement Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example AnnotatedRelationshipElement object"
+    } ],
+    "idShort" : "ExampleAnnotatedRelationshipElement",
+    "aas:RelationshipElement/first" : {
+      "@id" : "_:b251"
+    },
+    "second" : "_:b468"
+  }, {
+    "@id" : "_:b265",
+    "rdf:type" : {
+      "@id" : "aas:Operation"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b133",
+    "inoutputVariables" : "_:b343",
+    "inputVariables" : "_:b0",
+    "outputVariables" : "_:b345",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "en-us",
+      "@value" : "Example Operation object"
+    }, {
+      "@language" : "de",
+      "@value" : "Beispiel Operation Element"
+    } ],
+    "idShort" : "ExampleOperation",
+    "submodelElements" : [ "_:b50", "_:b342", "_:b306", "_:b344" ]
+  }, {
+    "@id" : "_:b267",
+    "rdf:type" : {
+      "@id" : "aas:Blob"
+    },
+    "contentType" : "application/pdf",
+    "idShort" : "ExampleBlob"
+  }, {
+    "@id" : "_:b268",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Operations/ExampleOperation"
+  }, {
+    "@id" : "_:b269",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b138",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b270",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "http://acplt.org/Submodels/Assets/TestAsset/BillOfMaterial"
+  }, {
+    "@id" : "_:b271",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Units/SpaceUnit"
+  }, {
+    "@id" : "_:b272",
+    "rdf:type" : {
+      "@id" : "aas:OperationVariable"
+    },
+    "value" : "_:b273"
+  }, {
+    "@id" : "_:b273",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b234",
+    "aas:Property/value" : "example",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property objec"
+    } ],
+    "idShort" : "ExampleProperty"
+  }, {
+    "@id" : "_:b274",
+    "rdf:type" : {
+      "@id" : "aas:AssetInformation"
+    },
+    "assetKind" : "aas:AssetKind/Instance",
+    "globalAssetId" : "_:b275"
+  }, {
+    "@id" : "_:b275",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b441",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b276",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b277",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Files/ExampleFile"
+  }, {
+    "@id" : "_:b278",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "idShort" : "ExampleSubmodelCollectionOrdered",
+    "aas:SubmodelElementCollection/value" : [ {
+      "@id" : "_:b279"
+    }, {
+      "@id" : "_:b280"
+    }, {
+      "@id" : "_:b267"
+    } ]
+  }, {
+    "@id" : "_:b279",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElement"
+    },
+    "idShort" : "ExampleRange"
+  }, {
+    "@id" : "_:b280",
+    "rdf:type" : {
+      "@id" : "aas:File"
+    },
+    "aas:File/contentType" : "application/pdf",
+    "aas:File/value" : "file:///TestFile.pdf",
+    "idShort" : "ExampleFile"
+  }, {
+    "@id" : "_:b281",
+    "rdf:type" : {
+      "@id" : "aas:Capability"
+    },
+    "idShort" : "ExampleCapability"
+  }, {
+    "@id" : "_:b282",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/AssetAdministrationShell",
+    "aas:Key/value" : "https://acplt.org/Test_Asset_Mandatory"
+  }, {
+    "@id" : "_:b283",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b284",
+    "rdf:type" : {
+      "@id" : "aas:Qualifier"
+    },
+    "aas:Qualifier/type" : "http://acplt.org/Qualifier/ExampleQualifier",
+    "aas:Qualifier/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/String"
+    }
+  }, {
+    "@id" : "_:b285",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b395",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b286",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "revision" : "0",
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b287",
+    "rdf:type" : {
+      "@id" : "aas:File"
+    },
+    "aas:File/contentType" : "application/pdf",
+    "aas:File/value" : "file:///TestFile.pd",
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b124",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel File  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example File  object"
+    } ],
+    "idShort" : "ExampleFile"
+  }, {
+    "@id" : "_:b288",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b289", "_:b290", "_:b291" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b289",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b290",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b291",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel"
+  }, {
+    "@id" : "_:b292",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b293",
+    "aas:Property/value" : "example",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "CONSTANT",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property objec"
+    } ],
+    "idShort" : "ExampleProperty"
+  }, {
+    "@id" : "_:b293",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b373",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b294",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/RelationshipElements/ExampleRelationshipElement"
+  }, {
+    "@id" : "_:b295",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "revision" : "0",
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b296",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElement"
+    },
+    "semanticId" : "_:b269",
+    "aas:Property/value" : "http://acplt.org/ValueId/ACPLT",
+    "valueId" : "_:b164",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "qualifiers" : [ "_:b90", "_:b161" ],
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Bezeichnung für eine natürliche oder juristische Person, die für die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation."
+    } ],
+    "idShort" : "ManufacturerName"
+  }, {
+    "@id" : "_:b297",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElement"
+    },
+    "keys" : [ "_:b298", "_:b299", "_:b260" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b298",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b299",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b300",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Blobs/ExampleProperty"
+  }, {
+    "@id" : "_:b303",
+    "rdf:type" : {
+      "@id" : "aas:EmbeddedDataSpecification"
+    },
+    "dataSpecification" : "_:b440",
+    "dataSpecificationContent" : "_:b147"
+  }, {
+    "@id" : "_:b304",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b136",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b305",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "revision" : "0",
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b306",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "semanticId" : "_:b217",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel SubmodelElementCollectionUnordered  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example SubmodelElementCollectionUnordered  object"
+    } ],
+    "idShort" : "ExampleSubmodelCollectionOrdered",
+    "aas:SubmodelElementCollection/value" : [ {
+      "@id" : "_:b307"
+    }, {
+      "@id" : "_:b308"
+    }, {
+      "@id" : "_:b13"
+    } ]
+  }, {
+    "@id" : "_:b307",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElement"
+    },
+    "semanticId" : "_:b258",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Reference Element  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Reference Element  object"
+    } ],
+    "idShort" : "ExampleReferenceElement",
+    "aas:SubmodelElementCollection/value" : {
+      "@id" : "_:b288"
+    }
+  }, {
+    "@id" : "_:b308",
+    "rdf:type" : {
+      "@id" : "aas:File"
+    },
+    "aas:File/contentType" : "application/pdf",
+    "aas:File/value" : "file:///TestFile.pdf",
+    "semanticId" : "_:b43",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel File  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example File  object"
+    } ],
+    "idShort" : "ExampleFile"
+  }, {
+    "@id" : "_:b309",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ReferenceElements/ExampleReferenceElement"
+  }, {
+    "@id" : "_:b31",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Blobs/ExampleRange"
+  }, {
+    "@id" : "_:b313",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/RelationshipElements/ExampleRelationshipElement"
+  }, {
+    "@id" : "_:b314",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b315",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b315",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Events/ExampleBasicEvent"
+  }, {
+    "@id" : "_:b322",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b196",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b323",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "semanticId" : "_:b324",
+    "aas:Property/value" : "exampleValue",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "qualifiers" : "_:b236",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property objec"
+    } ],
+    "idShort" : "ExampleProperty3"
+  }, {
+    "@id" : "_:b324",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b179",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b325",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b326",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b327",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b327",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ReferenceElements/ExampleReferenceElement"
+  }, {
+    "@id" : "_:b328",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b329",
+    "rdf:type" : {
+      "@id" : "aas:OperationVariable"
+    },
+    "value" : "_:b47"
+  }, {
+    "@id" : "_:b330",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b250",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b331",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "revision" : "0",
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b332",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b442",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b333",
+    "rdf:type" : {
+      "@id" : "aas:AssetInformation"
+    },
+    "assetKind" : "aas:AssetKind/Instance",
+    "globalAssetId" : "_:b99"
+  }, {
+    "@id" : "_:b334",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b94",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b338",
+    "rdf:type" : {
+      "@id" : "aas:Range"
+    },
+    "semanticId" : "_:b339",
+    "max" : "100",
+    "min" : "0",
+    "aas:Range/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/Int"
+    },
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Range Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Range object"
+    } ],
+    "idShort" : "ExampleRange"
+  }, {
+    "@id" : "_:b339",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b216",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b34",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Missing"
+  }, {
+    "@id" : "_:b342",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "semanticId" : "_:b381",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel SubmodelElementCollectionOrdered Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example SubmodelElementCollectionOrdered object"
+    } ],
+    "idShort" : "ExampleSubmodelCollectionOrdered",
+    "aas:SubmodelElementCollection/value" : [ {
+      "@id" : "_:b338"
+    }, {
+      "@id" : "_:b237"
+    }, {
+      "@id" : "_:b417"
+    } ]
+  }, {
+    "@id" : "_:b343",
+    "rdf:type" : {
+      "@id" : "aas:OperationVariable"
+    },
+    "value" : "_:b401"
+  }, {
+    "@id" : "_:b344",
+    "rdf:type" : {
+      "@id" : "aas:BasicEventElement"
+    },
+    "direction" : "aas:Direction/Input",
+    "observed" : "_:b432",
+    "state" : "aas:StateOfEvent/On",
+    "semanticId" : "_:b314",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel BasicEvent Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example BasicEvent object"
+    } ],
+    "idShort" : "ExampleBasicEvent"
+  }, {
+    "@id" : "_:b345",
+    "rdf:type" : {
+      "@id" : "aas:OperationVariable"
+    },
+    "value" : "_:b71"
+  }, {
+    "@id" : "_:b348",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b168",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b349",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel2_Mandatory"
+  }, {
+    "@id" : "_:b35",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b36",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b350",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty2"
+  }, {
+    "@id" : "_:b351",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b354",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "en-us",
+      "@value" : "Example SubmodelElementCollectionOrdered object"
+    }, {
+      "@language" : "de",
+      "@value" : "Beispiel SubmodelElementCollectionOrdered Element"
+    } ],
+    "idShort" : "ExampleSubmodelCollectionOrdered",
+    "aas:SubmodelElementCollection/value" : [ {
+      "@id" : "_:b352"
+    }, {
+      "@id" : "_:b353"
+    }, {
+      "@id" : "_:b4"
+    }, {
+      "@id" : "_:b87"
+    } ]
+  }, {
+    "@id" : "_:b352",
+    "rdf:type" : {
+      "@id" : "aas:Range"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b463",
+    "max" : "100",
+    "min" : "example",
+    "aas:Range/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/Int"
+    },
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Range Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Range object"
+    } ],
+    "idShort" : "ExampleRange"
+  }, {
+    "@id" : "_:b353",
+    "rdf:type" : {
+      "@id" : "aas:Range"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b425",
+    "max" : "example",
+    "min" : "0",
+    "aas:Range/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/Int"
+    },
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Range Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Range object"
+    } ],
+    "idShort" : "ExampleRange2"
+  }, {
+    "@id" : "_:b354",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b233",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b355",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Events/ExampleBasicEvent"
+  }, {
+    "@id" : "_:b356",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel"
+  }, {
+    "@id" : "_:b357",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b309",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b358",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Capabilities/ExampleCapability"
+  }, {
+    "@id" : "_:b36",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/RelationshipElements/ExampleAnnotatedRelationshipElement"
+  }, {
+    "@id" : "_:b364",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b222",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b366",
+    "rdf:type" : {
+      "@id" : "aas:OperationVariable"
+    },
+    "value" : "_:b367"
+  }, {
+    "@id" : "_:b367",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b192",
+    "aas:Property/value" : "example",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property objec"
+    } ],
+    "idShort" : "ExampleProperty"
+  }, {
+    "@id" : "_:b369",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b229",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b37",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Mandatory"
+  }, {
+    "@id" : "_:b370",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b313",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b373",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b374",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Mandatory"
+  }, {
+    "@id" : "_:b375",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Ranges/ExampleRange"
+  }, {
+    "@id" : "_:b378",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelTemplates/ExampleSubmodel"
+  }, {
+    "@id" : "_:b381",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b225",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b382",
+    "rdf:type" : {
+      "@id" : "aas:Capability"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b383",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Capability  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Capability  object"
+    } ],
+    "idShort" : "ExampleCapability"
+  }, {
+    "@id" : "_:b383",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b445",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b387",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b389",
+    "rdf:type" : {
+      "@id" : "aas:Operation"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "idShort" : "ExampleOperation"
+  }, {
+    "@id" : "_:b390",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Ranges/ExampleRange"
+  }, {
+    "@id" : "_:b391",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "revision" : "0",
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b392",
+    "rdf:type" : {
+      "@id" : "aas:OperationVariable"
+    },
+    "value" : "_:b292"
+  }, {
+    "@id" : "_:b393",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Missing"
+  }, {
+    "@id" : "_:b394",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b355",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b395",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b396",
+    "rdf:type" : {
+      "@id" : "aas:Operation"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b397",
+    "inoutputVariables" : "_:b366",
+    "inputVariables" : "_:b392",
+    "outputVariables" : "_:b272",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "en-us",
+      "@value" : "Example Operation object"
+    }, {
+      "@language" : "de",
+      "@value" : "Beispiel Operation Element"
+    } ],
+    "idShort" : "ExampleOperation"
+  }, {
+    "@id" : "_:b397",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b268",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b398",
+    "rdf:type" : {
+      "@id" : "aas:AnnotatedRelationshipElement"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b35",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel AnnotatedRelationshipElement Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example AnnotatedRelationshipElement object"
+    } ],
+    "idShort" : "ExampleAnnotatedRelationshipElement",
+    "aas:RelationshipElement/first" : {
+      "@id" : "_:b55"
+    },
+    "second" : "_:b230"
+  }, {
+    "@id" : "_:b4",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b5",
+    "aas:Property/value" : "example",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property object"
+    } ],
+    "idShort" : "ExampleProperty"
+  }, {
+    "@id" : "_:b400",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "revision" : "0",
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b401",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "semanticId" : "_:b130",
+    "aas:Property/value" : "http://acplt.org/ValueId/ExampleValueId",
+    "valueId" : "_:b92",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "CONSTANT",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property objec"
+    } ],
+    "idShort" : "ExampleProperty3"
+  }, {
+    "@id" : "_:b402",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b232", "_:b387", "_:b393" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b405",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b358",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b406",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b89",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b409",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Mandatory"
+  }, {
+    "@id" : "_:b41",
+    "rdf:type" : {
+      "@id" : "aas:ValueList"
+    },
+    "valueReferencePairs" : "_:b42"
+  }, {
+    "@id" : "_:b410",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/MultiLanguageProperty",
+    "aas:Key/value" : "ExampleMultiLanguageProperty"
+  }, {
+    "@id" : "_:b411",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b201",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b412",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "http://acplt.org/Submodels/Assets/TestAsset/BillOfMaterial"
+  }, {
+    "@id" : "_:b413",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ValueId/ExampleValueId"
+  }, {
+    "@id" : "_:b415",
+    "rdf:type" : {
+      "@id" : "aas:Qualifier"
+    },
+    "aas:Qualifier/type" : "http://acplt.org/Qualifier/ExampleQualifier",
+    "aas:Qualifier/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/String"
+    }
+  }, {
+    "@id" : "_:b416",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b79",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b417",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElement"
+    },
+    "semanticId" : "_:b364",
+    "aas:Property/value" : "http://acplt.org/ValueId/ExampleValueId",
+    "valueId" : "_:b162",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property object"
+    } ],
+    "idShort" : "ExampleProperty"
+  }, {
+    "@id" : "_:b418",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/2/0"
+  }, {
+    "@id" : "_:b419",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelElementCollections/ExampleSubmodelElementCollectionUnordered"
+  }, {
+    "@id" : "_:b42",
+    "rdf:type" : {
+      "@id" : "aas:ValueReferencePair"
+    },
+    "aas:ValueReferencePair/value" : "http://acplt.org/ValueId/ExampleValueId",
+    "aas:ValueReferencePair/valueId" : {
+      "@id" : "_:b215"
+    }
+  }, {
+    "@id" : "_:b420",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/MultiLanguageProperties/ExampleMultiLanguageProperty"
+  }, {
+    "@id" : "_:b421",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ValueId/ExampleValueId"
+  }, {
+    "@id" : "_:b425",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b390",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b427",
+    "rdf:type" : {
+      "@id" : "aas:AnnotatedRelationshipElement"
+    },
+    "idShort" : "ExampleAnnotatedRelationshipElement",
+    "aas:RelationshipElement/first" : {
+      "@id" : "_:b429"
+    },
+    "second" : "_:b428"
+  }, {
+    "@id" : "_:b428",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b410", "_:b139", "_:b374" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b429",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b328", "_:b465", "_:b113" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b43",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b44",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b430",
+    "rdf:type" : {
+      "@id" : "aas:RelationshipElement"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b370",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel RelationshipElement Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example RelationshipElement object"
+    } ],
+    "idShort" : "ExampleRelationshipElement",
+    "aas:RelationshipElement/first" : {
+      "@id" : "_:b431"
+    },
+    "second" : "_:b322"
+  }, {
+    "@id" : "_:b431",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b276",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b432",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b160", "_:b224", "_:b456" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b433",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b137",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b434",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ValueId/ExampleValue2"
+  }, {
+    "@id" : "_:b435",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b436",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b436",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/SubmodelElementCollections/ExampleSubmodelElementCollectionUnordered"
+  }, {
+    "@id" : "_:b437",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b434",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b438",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b439",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b439",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Operations/ExampleOperation"
+  }, {
+    "@id" : "_:b44",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Files/ExampleFile"
+  }, {
+    "@id" : "_:b440",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b418",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b441",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/AssetAdministrationShell",
+    "aas:Key/value" : "https://acplt.org/Test_Asset_Mandatory"
+  }, {
+    "@id" : "_:b442",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel"
+  }, {
+    "@id" : "_:b443",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b444",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b444",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://opcfoundation.org/UA/DI/1.1/DeviceType/Serialnumber"
+  }, {
+    "@id" : "_:b445",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Capabilities/ExampleCapability"
+  }, {
+    "@id" : "_:b446",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b448",
+    "rdf:type" : {
+      "@id" : "aas:BasicEventElement"
+    },
+    "direction" : "aas:Direction/Output",
+    "observed" : "_:b199",
+    "state" : "aas:StateOfEvent/Off",
+    "idShort" : "ExampleBasicEvent"
+  }, {
+    "@id" : "_:b449",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b452",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b45",
+    "rdf:type" : {
+      "@id" : "aas:AssetInformation"
+    },
+    "assetKind" : "aas:AssetKind/Instance",
+    "globalAssetId" : "_:b46"
+  }, {
+    "@id" : "_:b450",
+    "rdf:type" : {
+      "@id" : "aas:Entity"
+    },
+    "entityType" : "aas:EntityType/SelfManagedEntity",
+    "aas:Entity/globalAssetId" : {
+      "@id" : "_:b462"
+    },
+    "semanticId" : "_:b443",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Bezeichnung für eine natürliche oder juristische Person, die für die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation."
+    } ],
+    "idShort" : "ExampleEntity2"
+  }, {
+    "@id" : "_:b452",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "http://acplt.org/SubmodelTemplates/BillOfMaterial"
+  }, {
+    "@id" : "_:b453",
+    "rdf:type" : {
+      "@id" : "aas:OperationVariable"
+    },
+    "value" : "_:b323"
+  }, {
+    "@id" : "_:b454",
+    "rdf:type" : {
+      "@id" : "aas:AssetInformation"
+    },
+    "assetKind" : "aas:AssetKind/Instance",
+    "globalAssetId" : "_:b62"
+  }, {
+    "@id" : "_:b456",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel"
+  }, {
+    "@id" : "_:b457",
+    "rdf:type" : {
+      "@id" : "aas:Blob"
+    },
+    "contentType" : "application/pdf",
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b59",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Blob  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Blob  object"
+    } ],
+    "idShort" : "ExampleBlob"
+  }, {
+    "@id" : "_:b458",
+    "rdf:type" : {
+      "@id" : "aas:ReferenceElement"
+    },
+    "semanticId" : "_:b357",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel ReferenceElement  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example ReferenceElement  object"
+    } ],
+    "idShort" : "ExampleReferenceElement"
+  }, {
+    "@id" : "_:b46",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b282",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b460",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "kind" : "aas:ModelingKind/Instance",
+    "aas:Property/value" : "some example annotation",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "Parameter",
+    "idShort" : "ExampleProperty3"
+  }, {
+    "@id" : "_:b461",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "978-8234-234-342"
+  }, {
+    "@id" : "_:b462",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b150",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b463",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b375",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b464",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Entity",
+    "aas:Key/value" : "ExampleEntity"
+  }, {
+    "@id" : "_:b465",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b466",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b277",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b468",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b350", "_:b464", "_:b412" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b47",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "semanticId" : "_:b19",
+    "aas:Property/value" : "exampleValue",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "qualifiers" : "_:b48",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property objec"
+    } ],
+    "idShort" : "ExampleProperty1"
+  }, {
+    "@id" : "_:b48",
+    "rdf:type" : {
+      "@id" : "aas:Qualifier"
+    },
+    "aas:Qualifier/type" : "http://acplt.org/Qualifier/ExampleQualifier",
+    "aas:Qualifier/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/String"
+    }
+  }, {
+    "@id" : "_:b49",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "idShort" : "ExampleSubmodelCollectionOrdered2"
+  }, {
+    "@id" : "_:b5",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b207",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b50",
+    "rdf:type" : {
+      "@id" : "aas:Capability"
+    },
+    "semanticId" : "_:b51",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Capability  Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Capability  object"
+    } ],
+    "idShort" : "ExampleCapability"
+  }, {
+    "@id" : "_:b51",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b61",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b52",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdered"
+  }, {
+    "@id" : "_:b55",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b56",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b56",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExampleProperty"
+  }, {
+    "@id" : "_:b59",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b60",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b60",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Blobs/ExampleBlob"
+  }, {
+    "@id" : "_:b61",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Capabilities/ExampleCapability"
+  }, {
+    "@id" : "_:b62",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b63",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b63",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/AssetAdministrationShell",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Missing"
+  }, {
+    "@id" : "_:b64",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/AssetAdministrationShell",
+    "aas:Key/value" : "https://acplt.org/Test_Asset_Mandatory"
+  }, {
+    "@id" : "_:b65",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://opcfoundation.org/UA/DI/1.1/DeviceType/Serialnumber"
+  }, {
+    "@id" : "_:b66",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/RelationshipElements/ExampleRelationshipElement"
+  }, {
+    "@id" : "_:b68",
+    "rdf:type" : {
+      "@id" : "aas:AdministrativeInformation"
+    },
+    "version" : "0.9"
+  }, {
+    "@id" : "_:b71",
+    "rdf:type" : {
+      "@id" : "aas:Property"
+    },
+    "semanticId" : "_:b73",
+    "aas:Property/value" : "http://acplt.org/ValueId/ExampleValueId",
+    "valueId" : "_:b72",
+    "valueType" : "aas:DataTypeDefXsd/String",
+    "category" : "CONSTANT",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel Property Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example Property objec"
+    } ],
+    "idShort" : "ExampleProperty2"
+  }, {
+    "@id" : "_:b72",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b421",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b73",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b16",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b74",
+    "rdf:type" : {
+      "@id" : "aas:RelationshipElement"
+    },
+    "semanticId" : "_:b77",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel RelationshipElement Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example RelationshipElement object"
+    } ],
+    "idShort" : "ExampleRelationshipElement",
+    "aas:RelationshipElement/first" : {
+      "@id" : "_:b76"
+    },
+    "second" : "_:b75"
+  }, {
+    "@id" : "_:b75",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b223", "_:b52", "_:b167" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b76",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b446", "_:b283", "_:b128" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/ModelReference"
+    }
+  }, {
+    "@id" : "_:b77",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b66",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b78",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b17",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b79",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Blobs/ExampleProperty"
+  }, {
+    "@id" : "_:b8",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "idShort" : "ExampleSubmodelCollectionOrdered",
+    "aas:SubmodelElementCollection/value" : [ {
+      "@id" : "_:b9"
+    }, {
+      "@id" : "_:b10"
+    } ]
+  }, {
+    "@id" : "_:b80",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://opcfoundation.org/UA/DI/1.1/DeviceType/Serialnumber"
+  }, {
+    "@id" : "_:b81",
+    "rdf:type" : {
+      "@id" : "aas:SubmodelElementCollection"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b82",
+    "category" : "Parameter",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel SubmodelElementCollectionOrdered Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example SubmodelElementCollectionOrdered object"
+    } ],
+    "idShort" : "ExampleSubmodelCollectionOrdered2"
+  }, {
+    "@id" : "_:b82",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b195",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b84",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Entity",
+    "aas:Key/value" : "ExampleEntity"
+  }, {
+    "@id" : "_:b87",
+    "rdf:type" : {
+      "@id" : "aas:MultiLanguageProperty"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "semanticId" : "_:b88",
+    "category" : "Constant",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Beispiel MultiLanguageProperty Element"
+    }, {
+      "@language" : "en-us",
+      "@value" : "Example eMultiLanguageProperty object"
+    } ],
+    "idShort" : "ExampleMultiLanguageProperty"
+  }, {
+    "@id" : "_:b88",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b165",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b89",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/Properties/ExampleProperty"
+  }, {
+    "@id" : "_:b9",
+    "rdf:type" : {
+      "@id" : "aas:MultiLanguageProperty"
+    },
+    "idShort" : "ExampleMultiLanguageProperty",
+    "aas:SubmodelElementCollection/value" : {
+      "@id" : "_:b132"
+    }
+  }, {
+    "@id" : "_:b90",
+    "rdf:type" : {
+      "@id" : "aas:Qualifier"
+    },
+    "aas:Qualifier/type" : "http://acplt.org/Qualifier/ExampleQualifier",
+    "aas:Qualifier/value" : "100",
+    "aas:Qualifier/valueType" : {
+      "@id" : "aas:DataTypeDefXsd/Int"
+    }
+  }, {
+    "@id" : "_:b92",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b93",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b93",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/GlobalReference",
+    "aas:Key/value" : "http://acplt.org/ValueId/ExampleValueId"
+  }, {
+    "@id" : "_:b94",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "http://acplt.org/Submodels/Assets/TestAsset/BillOfMaterial"
+  }, {
+    "@id" : "_:b95",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : [ "_:b96", "_:b97", "_:b98" ],
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "_:b96",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Property",
+    "aas:Key/value" : "ExamplePropert"
+  }, {
+    "@id" : "_:b97",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/SubmodelElementCollection",
+    "aas:Key/value" : "ExampleSubmodelCollectionOrdere"
+  }, {
+    "@id" : "_:b98",
+    "rdf:type" : {
+      "@id" : "aas:Key"
+    },
+    "type" : "aas:KeyTypes/Submodel",
+    "aas:Key/value" : "https://acplt.org/Test_Submodel_Missing"
+  }, {
+    "@id" : "_:b99",
+    "rdf:type" : {
+      "@id" : "aas:Reference"
+    },
+    "keys" : "_:b64",
+    "aas:Reference/type" : {
+      "@id" : "aas:ReferenceTypes/GlobalReference"
+    }
+  }, {
+    "@id" : "http://acplt.org/DataSpecifciations/Example/Identification",
+    "rdf:type" : {
+      "@id" : "aas:ConceptDescription"
+    },
+    "isCaseOf" : "_:b304",
+    "embeddedDataSpecifications" : "_:b303",
+    "administration" : "_:b305",
+    "id" : "http://acplt.org/DataSpecifciations/Example/Identification",
+    "idShort" : "TestSpec_01"
+  }, {
+    "@id" : "http://acplt.org/Submodels/Assets/TestAsset/BillOfMaterial",
+    "rdf:type" : {
+      "@id" : "aas:Submodel"
+    },
+    "kind" : "aas:ModelingKind/Instance",
+    "semanticId" : "_:b449",
+    "administration" : "_:b68",
+    "id" : "http://acplt.org/Submodels/Assets/TestAsset/BillOfMaterial",
+    "description" : [ {
+      "@language" : "en-us",
+      "@value" : "An example bill of material submodel for the test application"
+    }, {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-BillofMaterial-Submodel für eine Test-Anwendung"
+    } ],
+    "idShort" : "BillOfMaterial",
+    "submodelElements" : [ "_:b181", "_:b450" ]
+  }, {
+    "@id" : "http://acplt.org/Submodels/Assets/TestAsset/Identification",
+    "rdf:type" : {
+      "@id" : "aas:Submodel"
+    },
+    "kind" : "aas:ModelingKind/Instance",
+    "semanticId" : "_:b213",
+    "administration" : "_:b295",
+    "id" : "http://acplt.org/Submodels/Assets/TestAsset/Identification",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-Identifikations-Submodel für eine Test-Anwendung"
+    }, {
+      "@language" : "en-us",
+      "@value" : "An example asset identification submodel for the test application"
+    } ],
+    "idShort" : "Identification",
+    "submodelElements" : [ "_:b103", "_:b296" ]
+  }, {
+    "@id" : "https://acplt.org/Test_AssetAdministrationShell",
+    "rdf:type" : {
+      "@id" : "aas:AssetAdministrationShell"
+    },
+    "assetInformation" : "_:b333",
+    "derivedFrom" : "_:b22",
+    "submodels" : [ "_:b332", "_:b334", "_:b174" ],
+    "administration" : "_:b331",
+    "id" : "https://acplt.org/Test_AssetAdministrationShell",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-Verwaltungsschale für eine Test-Anwendung"
+    }, {
+      "@language" : "en-us",
+      "@value" : "An Example Asset Administration Shell for the test application"
+    } ],
+    "idShort" : "TestAssetAdministrationShell"
+  }, {
+    "@id" : "https://acplt.org/Test_AssetAdministrationShell2_Mandatory",
+    "rdf:type" : {
+      "@id" : "aas:AssetAdministrationShell"
+    },
+    "assetInformation" : "_:b274",
+    "id" : "https://acplt.org/Test_AssetAdministrationShell2_Mandatory",
+    "idShort" : "Test_AssetAdministrationShell2_Mandatory"
+  }, {
+    "@id" : "https://acplt.org/Test_AssetAdministrationShellEnvironment",
+    "rdf:type" : {
+      "@id" : "aas:Environment"
+    },
+    "assetAdministrationShells" : [ "https://acplt.org/Test_AssetAdministrationShell2_Mandatory", "https://acplt.org/Test_AssetAdministrationShell", "https://acplt.org/Test_AssetAdministrationShell_Missing", "https://acplt.org/Test_AssetAdministrationShell_Mandatory" ],
+    "conceptDescriptions" : [ "https://acplt.org/Test_ConceptDescription_Mandatory", "https://admin-shell.io/https://acplt.org/Test_ConceptDescription", "http://acplt.org/DataSpecifciations/Example/Identification", "https://acplt.org/Test_ConceptDescription_Missing" ],
+    "aas:Environment/submodels" : [ {
+      "@id" : "https://acplt.org/Test_Submodel_Missing"
+    }, {
+      "@id" : "http://acplt.org/Submodels/Assets/TestAsset/BillOfMaterial"
+    }, {
+      "@id" : "https://acplt.org/Test_Submodel_Mandatory"
+    }, {
+      "@id" : "https://acplt.org/Test_Submodel2_Mandatory"
+    }, {
+      "@id" : "https://acplt.org/Test_Submodel"
+    }, {
+      "@id" : "http://acplt.org/Submodels/Assets/TestAsset/Identification"
+    }, {
+      "@id" : "https://acplt.org/Test_Submodel_Template"
+    } ]
+  }, {
+    "@id" : "https://acplt.org/Test_AssetAdministrationShell_Mandatory",
+    "rdf:type" : {
+      "@id" : "aas:AssetAdministrationShell"
+    },
+    "assetInformation" : "_:b45",
+    "submodels" : [ "_:b177", "_:b178" ],
+    "id" : "https://acplt.org/Test_AssetAdministrationShell_Mandatory",
+    "idShort" : "Test_AssetAdministrationShell_Mandatory"
+  }, {
+    "@id" : "https://acplt.org/Test_AssetAdministrationShell_Missing",
+    "rdf:type" : {
+      "@id" : "aas:AssetAdministrationShell"
+    },
+    "assetInformation" : "_:b454",
+    "submodels" : "_:b25",
+    "administration" : "_:b286",
+    "id" : "https://acplt.org/Test_AssetAdministrationShell_Missing",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-Verwaltungsschale für eine Test-Anwendung"
+    }, {
+      "@language" : "en-us",
+      "@value" : "An Example Asset Administration Shell for the test application"
+    } ],
+    "idShort" : "TestAssetAdministrationShell"
+  }, {
+    "@id" : "https://acplt.org/Test_ConceptDescription_Mandatory",
+    "rdf:type" : {
+      "@id" : "aas:ConceptDescription"
+    },
+    "id" : "https://acplt.org/Test_ConceptDescription_Mandatory",
+    "idShort" : "Test_ConceptDescription_Mandatory"
+  }, {
+    "@id" : "https://acplt.org/Test_ConceptDescription_Missing",
+    "rdf:type" : {
+      "@id" : "aas:ConceptDescription"
+    },
+    "administration" : "_:b202",
+    "id" : "https://acplt.org/Test_ConceptDescription_Missing",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-ConceptDescription für eine Test-Anwendung"
+    }, {
+      "@language" : "en-us",
+      "@value" : "An example concept description for the test application"
+    } ],
+    "idShort" : "TestConceptDescription1"
+  }, {
+    "@id" : "https://acplt.org/Test_Submodel",
+    "rdf:type" : {
+      "@id" : "aas:Submodel"
+    },
+    "kind" : "aas:ModelingKind/Instance",
+    "semanticId" : "_:b262",
+    "administration" : "_:b263",
+    "id" : "https://acplt.org/Test_Submodel",
+    "description" : [ {
+      "@language" : "en-us",
+      "@value" : "An example submodel for the test application"
+    }, {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-Teilmodell für eine Test-Anwendung"
+    } ],
+    "idShort" : "TestSubmodel",
+    "submodelElements" : [ "_:b264", "_:b265", "_:b114" ]
+  }, {
+    "@id" : "https://acplt.org/Test_Submodel2_Mandatory",
+    "rdf:type" : {
+      "@id" : "aas:Submodel"
+    },
+    "kind" : "aas:ModelingKind/Instance",
+    "id" : "https://acplt.org/Test_Submodel2_Mandatory",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-ConceptDescription für eine Test-Anwendung"
+    }, {
+      "@language" : "en-us",
+      "@value" : "An example concept description for the test application"
+    } ],
+    "idShort" : "Test_Submodel2_Mandatory"
+  }, {
+    "@id" : "https://acplt.org/Test_Submodel_Mandatory",
+    "rdf:type" : {
+      "@id" : "aas:Submodel"
+    },
+    "kind" : "aas:ModelingKind/Template",
+    "id" : "https://acplt.org/Test_Submodel_Mandatory",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-ConceptDescription für eine Test-Anwendung"
+    }, {
+      "@language" : "en-us",
+      "@value" : "An example concept description for the test application"
+    } ],
+    "idShort" : "Test_Submodel_Mandatory",
+    "submodelElements" : [ "_:b448", "_:b140", "_:b278", "_:b8", "_:b49", "_:b427", "_:b281", "_:b389" ]
+  }, {
+    "@id" : "https://acplt.org/Test_Submodel_Missing",
+    "rdf:type" : {
+      "@id" : "aas:Submodel"
+    },
+    "kind" : "aas:ModelingKind/Instance",
+    "semanticId" : "_:b189",
+    "administration" : "_:b186",
+    "id" : "https://acplt.org/Test_Submodel_Missing",
+    "description" : [ {
+      "@language" : "en-us",
+      "@value" : "An example submodel for the test application"
+    }, {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-Teilmodell für eine Test-Anwendung"
+    } ],
+    "idShort" : "TestSubmodel",
+    "submodelElements" : [ "_:b185", "_:b74", "_:b187", "_:b188", "_:b106", "_:b190", "_:b191" ]
+  }, {
+    "@id" : "https://acplt.org/Test_Submodel_Template",
+    "rdf:type" : {
+      "@id" : "aas:Submodel"
+    },
+    "kind" : "aas:ModelingKind/Instance",
+    "semanticId" : "_:b78",
+    "administration" : "_:b400",
+    "id" : "https://acplt.org/Test_Submodel_Template",
+    "description" : [ {
+      "@language" : "en-us",
+      "@value" : "An example concept description for the test application"
+    }, {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-ConceptDescription für eine Test-Anwendung"
+    } ],
+    "idShort" : "TestSubmodel",
+    "submodelElements" : [ "_:b351", "_:b396", "_:b430", "_:b382", "_:b255", "_:b398", "_:b208", "_:b81" ]
+  }, {
+    "@id" : "https://admin-shell.io/aas/3/0/RC02/",
+    "@type" : "owl:Ontology",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "This ontology represents the data model for the Asset Administration Shell according to the specification 'Details of the Asset Administration Shell - Part 1 - Version V3.0RC02'."
+    },
+    "isDefinedBy" : "https://admin-shell.io/aas/3/0/RC02/",
+    "versionInfo" : "V3.0RC02"
+  }, {
+    "@id" : "aas:AasSubmodelElements",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Enumeration of all possible elements of a 'SubmodelElementList'."
+    },
+    "label" : "Aas Submodel Elements",
+    "oneOf" : {
+      "@list" : [ "aas:AasSubmodelElements/AnnotatedRelationshipElement", "aas:AasSubmodelElements/BasicEventElement", "aas:AasSubmodelElements/Blob", "aas:AasSubmodelElements/Capability", "aas:AasSubmodelElements/DataElement", "aas:AasSubmodelElements/Entity", "aas:AasSubmodelElements/EventElement", "aas:AasSubmodelElements/File", "aas:AasSubmodelElements/MultiLanguageProperty", "aas:AasSubmodelElements/Operation", "aas:AasSubmodelElements/Property", "aas:AasSubmodelElements/Range", "aas:AasSubmodelElements/ReferenceElement", "aas:AasSubmodelElements/RelationshipElement", "aas:AasSubmodelElements/SubmodelElement", "aas:AasSubmodelElements/SubmodelElementCollection", "aas:AasSubmodelElements/SubmodelElementList" ]
+    }
+  }, {
+    "@id" : "aas:AasSubmodelElements/AnnotatedRelationshipElement",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Annotated Relationship Element"
+  }, {
+    "@id" : "aas:AasSubmodelElements/BasicEventElement",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Basic Event Element"
+  }, {
+    "@id" : "aas:AasSubmodelElements/Blob",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Blob"
+  }, {
+    "@id" : "aas:AasSubmodelElements/Capability",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Capability"
+  }, {
+    "@id" : "aas:AasSubmodelElements/DataElement",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Data Element"
+  }, {
+    "@id" : "aas:AasSubmodelElements/Entity",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Entity"
+  }, {
+    "@id" : "aas:AasSubmodelElements/EventElement",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Event Element"
+  }, {
+    "@id" : "aas:AasSubmodelElements/File",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "File"
+  }, {
+    "@id" : "aas:AasSubmodelElements/MultiLanguageProperty",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Multi Language Property"
+  }, {
+    "@id" : "aas:AasSubmodelElements/Operation",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Operation"
+  }, {
+    "@id" : "aas:AasSubmodelElements/Property",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Property"
+  }, {
+    "@id" : "aas:AasSubmodelElements/Range",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Range"
+  }, {
+    "@id" : "aas:AasSubmodelElements/ReferenceElement",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Reference Element"
+  }, {
+    "@id" : "aas:AasSubmodelElements/RelationshipElement",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Relationship Element"
+  }, {
+    "@id" : "aas:AasSubmodelElements/SubmodelElement",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Submodel Element"
+  }, {
+    "@id" : "aas:AasSubmodelElements/SubmodelElementCollection",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Submodel Element Collection"
+  }, {
+    "@id" : "aas:AasSubmodelElements/SubmodelElementList",
+    "rdf:type" : {
+      "@id" : "aas:AasSubmodelElements"
+    },
+    "label" : "Submodel Element List"
+  }, {
+    "@id" : "aas:AdministrativeInformation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Administrative meta-information for an element like version information."
+    },
+    "label" : "Administrative Information",
+    "subClassOf" : "aas:HasDataSpecification"
+  }, {
+    "@id" : "aas:AdministrativeInformation/revision",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Revision of the element."
+    },
+    "domain" : "aas:AdministrativeInformation",
+    "label" : "has revision",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:AdministrativeInformation/version",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Version of the element."
+    },
+    "domain" : "aas:AdministrativeInformation",
+    "label" : "has version",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:AnnotatedRelationshipElement",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An annotated relationship element is a relationship element that can be annotated with additional data elements."
+    },
+    "label" : "Annotated Relationship Element",
+    "subClassOf" : "aas:RelationshipElement"
+  }, {
+    "@id" : "aas:AnnotatedRelationshipElement/annotations",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A data element that represents an annotation that holds for the relationship between the two elements"
+    },
+    "domain" : "aas:AnnotatedRelationshipElement",
+    "label" : "has annotations",
+    "range" : "aas:DataElement"
+  }, {
+    "@id" : "aas:AssetAdministrationShell",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An asset administration shell."
+    },
+    "label" : "Asset Administration Shell",
+    "subClassOf" : [ "aas:HasDataSpecification", "aas:Identifiable" ]
+  }, {
+    "@id" : "aas:AssetAdministrationShell/assetInformation",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Meta-information about the asset the AAS is representing."
+    },
+    "domain" : "aas:AssetAdministrationShell",
+    "label" : "has asset information",
+    "range" : "aas:AssetInformation"
+  }, {
+    "@id" : "aas:AssetAdministrationShell/derivedFrom",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The reference to the AAS the AAS was derived from."
+    },
+    "domain" : "aas:AssetAdministrationShell",
+    "label" : "has derived from",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:AssetAdministrationShell/submodels",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "References to submodels of the AAS."
+    },
+    "domain" : "aas:AssetAdministrationShell",
+    "label" : "has submodels",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:AssetInformation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "In 'AssetInformation' identifying meta data of the asset that is represented by an AAS is defined."
+    },
+    "label" : "Asset Information"
+  }, {
+    "@id" : "aas:AssetInformation/assetKind",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Denotes whether the Asset is of kind 'Type' or 'Instance'."
+    },
+    "domain" : "aas:AssetInformation",
+    "label" : "has asset kind",
+    "range" : "aas:AssetKind"
+  }, {
+    "@id" : "aas:AssetInformation/defaultThumbnail",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Thumbnail of the asset represented by the Asset Administration Shell."
+    },
+    "domain" : "aas:AssetInformation",
+    "label" : "has default thumbnail",
+    "range" : "aas:Resource"
+  }, {
+    "@id" : "aas:AssetInformation/globalAssetId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Global identifier of the asset the AAS is representing."
+    },
+    "domain" : "aas:AssetInformation",
+    "label" : "has global asset id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:AssetInformation/specificAssetIds",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Additional domain-specific, typically proprietary identifier for the asset like e.g., serial number etc."
+    },
+    "domain" : "aas:AssetInformation",
+    "label" : "has specific asset ids",
+    "range" : "aas:SpecificAssetId"
+  }, {
+    "@id" : "aas:AssetKind",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Enumeration for denoting whether an asset is a type asset or an instance asset."
+    },
+    "label" : "Asset Kind",
+    "oneOf" : {
+      "@list" : [ "aas:AssetKind/Instance", "aas:AssetKind/Type" ]
+    }
+  }, {
+    "@id" : "aas:AssetKind/Instance",
+    "rdf:type" : {
+      "@id" : "aas:AssetKind"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "concrete, clearly identifiable component of a certain type"
+    },
+    "label" : "Instance"
+  }, {
+    "@id" : "aas:AssetKind/Type",
+    "rdf:type" : {
+      "@id" : "aas:AssetKind"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "hardware or software element which specifies the common attributes shared by all instances of the type"
+    },
+    "label" : "Type"
+  }, {
+    "@id" : "aas:BasicEventElement",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A basic event element."
+    },
+    "label" : "Basic Event Element",
+    "subClassOf" : "aas:EventElement"
+  }, {
+    "@id" : "aas:BasicEventElement/direction",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Direction of event."
+    },
+    "domain" : "aas:BasicEventElement",
+    "label" : "has direction",
+    "range" : "aas:Direction"
+  }, {
+    "@id" : "aas:BasicEventElement/lastUpdate",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Timestamp in UTC, when the last event was received (input direction) or sent (output direction)."
+    },
+    "domain" : "aas:BasicEventElement",
+    "label" : "has last update",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:BasicEventElement/maxInterval",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "For input direction: not applicable."
+    },
+    "domain" : "aas:BasicEventElement",
+    "label" : "has max interval",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:BasicEventElement/messageBroker",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Information, which outer message infrastructure shall handle messages for the 'EventElement'. Refers to a 'Submodel', 'SubmodelElementList', 'SubmodelElementCollection' or 'Entity', which contains 'DataElement''s describing the proprietary specification for the message broker."
+    },
+    "domain" : "aas:BasicEventElement",
+    "label" : "has message broker",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:BasicEventElement/messageTopic",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Information for the outer message infrastructure for scheduling the event to the respective communication channel."
+    },
+    "domain" : "aas:BasicEventElement",
+    "label" : "has message topic",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:BasicEventElement/minInterval",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "For input direction, reports on the maximum frequency, the software entity behind the respective Referable can handle input events."
+    },
+    "domain" : "aas:BasicEventElement",
+    "label" : "has min interval",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:BasicEventElement/observed",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to the 'Referable', which defines the scope of the event. Can be 'AssetAdministrationShell', 'Submodel', or 'SubmodelElement'."
+    },
+    "domain" : "aas:BasicEventElement",
+    "label" : "has observed",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:BasicEventElement/state",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "State of event."
+    },
+    "domain" : "aas:BasicEventElement",
+    "label" : "has state",
+    "range" : "aas:StateOfEvent"
+  }, {
+    "@id" : "aas:Blob",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A 'Blob' is a data element that represents a file that is contained with its source code in the value attribute."
+    },
+    "label" : "Blob",
+    "subClassOf" : "aas:DataElement"
+  }, {
+    "@id" : "aas:Blob/contentType",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Content type of the content of the 'Blob'."
+    },
+    "domain" : "aas:Blob",
+    "label" : "has content type",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Blob/value",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The value of the 'Blob' instance of a blob data element."
+    },
+    "domain" : "aas:Blob",
+    "label" : "has value",
+    "range" : "xs:base64Binary"
+  }, {
+    "@id" : "aas:Capability",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A capability is the implementation-independent description of the potential of an asset to achieve a certain effect in the physical or virtual world."
+    },
+    "label" : "Capability",
+    "subClassOf" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:ConceptDescription",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The semantics of a property or other elements that may have a semantic description is defined by a concept description."
+    },
+    "label" : "Concept Description",
+    "subClassOf" : [ "aas:HasDataSpecification", "aas:Identifiable" ]
+  }, {
+    "@id" : "aas:ConceptDescription/isCaseOf",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to an external definition the concept is compatible to or was derived from."
+    },
+    "domain" : "aas:ConceptDescription",
+    "label" : "has is case of",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:DataElement",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A data element is a submodel element that is not further composed out of other submodel elements."
+    },
+    "label" : "Data Element",
+    "subClassOf" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:DataSpecificationContent",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Data specification content is part of a data specification template and defines which additional attributes shall be added to the element instance that references the data specification template and meta information about the template itself."
+    },
+    "label" : "Data Specification Content"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Content of data specification template for concept descriptions for properties, values and value lists conformant to IEC 61360."
+    },
+    "label" : "Data Specification IEC 61360",
+    "subClassOf" : "aas:DataSpecificationContent"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/dataType",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Data Type"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has data type",
+    "range" : "aas:DataTypeIEC61360"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/definition",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Definition in different languages"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has definition",
+    "range" : "rdf:langString"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/levelType",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Set of levels."
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has level type",
+    "range" : "aas:LevelType"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/preferredName",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Preferred name"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has preferred name",
+    "range" : "rdf:langString"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/shortName",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Short name"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has short name",
+    "range" : "rdf:langString"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/sourceOfDefinition",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Source of definition"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has source of definition",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/symbol",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Symbol"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has symbol",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/unit",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Unit"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has unit",
+    "range" : "xs:string"
+  }, {
+    "@id" : "unit:Id",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Unique unit id"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has unit id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/value",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Value"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has value",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/valueFormat",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Value Format"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has value format",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationIEC61360/valueList",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "List of allowed values"
+    },
+    "domain" : "aas:DataSpecificationIEC61360",
+    "label" : "has value list",
+    "range" : "aas:ValueList"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit",
+    "@type" : "owl:Class",
+    "label" : "Data Specification Physical Unit",
+    "subClassOf" : "aas:DataSpecificationContent"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/conversionFactor",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Conversion factor"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has conversion factor",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/definition",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Definition in different languages"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has definition",
+    "range" : "rdf:langString"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/dinNotation",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Notation of physical unit conformant to DIN"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has din notation",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/eceCode",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Code of physical unit conformant to ECE"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has ece code",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/eceName",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Name of physical unit conformant to ECE"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has ece name",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/nistName",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Name of NIST physical unit"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has nist name",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/registrationAuthorityId",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Registration authority ID"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has registration authority id",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/siName",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Name of SI physical unit"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has si name",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/siNotation",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Notation of SI physical unit"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has si notation",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/sourceOfDefinition",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Source of definition"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has source of definition",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/supplier",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Supplier"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has supplier",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/unitName",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Name of the physical unit"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has unit name",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataSpecificationPhysicalUnit/unitSymbol",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Symbol for the physical unit"
+    },
+    "domain" : "aas:DataSpecificationPhysicalUnit",
+    "label" : "has unit symbol",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:DataTypeDefXsd",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Enumeration listing all xsd anySimpleTypes"
+    },
+    "label" : "Data Type Def Xsd",
+    "oneOf" : {
+      "@list" : [ "aas:DataTypeDefXsd/AnyUri", "aas:DataTypeDefXsd/Base64Binary", "aas:DataTypeDefXsd/Boolean", "aas:DataTypeDefXsd/Byte", "aas:DataTypeDefXsd/Date", "aas:DataTypeDefXsd/DateTime", "aas:DataTypeDefXsd/DateTimeStamp", "aas:DataTypeDefXsd/DayTimeDuration", "aas:DataTypeDefXsd/Decimal", "aas:DataTypeDefXsd/Double", "aas:DataTypeDefXsd/Duration", "aas:DataTypeDefXsd/Float", "aas:DataTypeDefXsd/GDay", "aas:DataTypeDefXsd/GMonth", "aas:DataTypeDefXsd/GMonthDay", "aas:DataTypeDefXsd/GYear", "aas:DataTypeDefXsd/GYearMonth", "aas:DataTypeDefXsd/HexBinary", "aas:DataTypeDefXsd/Int", "aas:DataTypeDefXsd/Integer", "aas:DataTypeDefXsd/Long", "aas:DataTypeDefXsd/NegativeInteger", "aas:DataTypeDefXsd/NonNegativeInteger", "aas:DataTypeDefXsd/NonPositiveInteger", "aas:DataTypeDefXsd/PositiveInteger", "aas:DataTypeDefXsd/Short", "aas:DataTypeDefXsd/String", "aas:DataTypeDefXsd/Time", "aas:DataTypeDefXsd/UnsignedByte", "aas:DataTypeDefXsd/UnsignedInt", "aas:DataTypeDefXsd/UnsignedLong", "aas:DataTypeDefXsd/UnsignedShort", "aas:DataTypeDefXsd/YearMonthDuration" ]
+    }
+  }, {
+    "@id" : "aas:DataTypeDefXsd/AnyUri",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Any Uri"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Base64Binary",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Base 64 Binary"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Boolean",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Boolean"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Byte",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Byte"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Date",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Date"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/DateTime",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Date Time"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/DateTimeStamp",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Date Time Stamp"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/DayTimeDuration",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Day Time Duration"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Decimal",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Decimal"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Double",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Double"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Duration",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Duration"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Float",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Float"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/GDay",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "G Day"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/GMonth",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "G Month"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/GMonthDay",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "G Month Day"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/GYear",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "G Year"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/GYearMonth",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "G Year Month"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/HexBinary",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Hex Binary"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Int",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Int"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Integer",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Integer"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Long",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Long"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/NegativeInteger",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Negative Integer"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/NonNegativeInteger",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Non Negative Integer"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/NonPositiveInteger",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Non Positive Integer"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/PositiveInteger",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Positive Integer"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Short",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Short"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/String",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "String"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/Time",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Time"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/UnsignedByte",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Unsigned Byte"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/UnsignedInt",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Unsigned Int"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/UnsignedLong",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Unsigned Long"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/UnsignedShort",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Unsigned Short"
+  }, {
+    "@id" : "aas:DataTypeDefXsd/YearMonthDuration",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeDefXsd"
+    },
+    "label" : "Year Month Duration"
+  }, {
+    "@id" : "aas:DataTypeIEC61360",
+    "@type" : "owl:Class",
+    "label" : "Data Type IEC 61360",
+    "oneOf" : {
+      "@list" : [ "aas:DataTypeIEC61360/Blob", "aas:DataTypeIEC61360/Boolean", "aas:DataTypeIEC61360/Date", "aas:DataTypeIEC61360/File", "aas:DataTypeIEC61360/Html", "aas:DataTypeIEC61360/IntegerCount", "aas:DataTypeIEC61360/IntegerCurrency", "aas:DataTypeIEC61360/IntegerMeasure", "aas:DataTypeIEC61360/Irdi", "aas:DataTypeIEC61360/Iri", "aas:DataTypeIEC61360/Rational", "aas:DataTypeIEC61360/RationalMeasure", "aas:DataTypeIEC61360/RealCount", "aas:DataTypeIEC61360/RealCurrency", "aas:DataTypeIEC61360/RealMeasure", "aas:DataTypeIEC61360/String", "aas:DataTypeIEC61360/StringTranslatable", "aas:DataTypeIEC61360/Time", "aas:DataTypeIEC61360/Timestamp" ]
+    }
+  }, {
+    "@id" : "aas:DataTypeIEC61360/Blob",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing the content of a file. Values may be binaries."
+    },
+    "label" : "Blob"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/Boolean",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values representing truth of logic or Boolean algebra (TRUE, FALSE)"
+    },
+    "label" : "Boolean"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/Date",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing a calendar date, conformant to ISO 8601:2004 Format yyyy-mm-dd Example from IEC 61360-1:2017: \"1999-05-31\" is the [DATE] representation of: \"31 May 1999\"."
+    },
+    "label" : "Date"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/File",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing an address to a file. The values are of type URI and can represent an absolute or relative path."
+    },
+    "label" : "File"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/Html",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Values containing string with any sequence of characters, using the syntax of HTML5 (see W3C Recommendation 28:2014)"
+    },
+    "label" : "Html"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/IntegerCount",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing values of type INTEGER but are no currencies or measures"
+    },
+    "label" : "Integer Count"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/IntegerCurrency",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing values of type INTEGER that are currencies"
+    },
+    "label" : "Integer Currency"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/IntegerMeasure",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing values that are measure of type INTEGER. In addition such a value comes with a physical unit."
+    },
+    "label" : "Integer Measure"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/Irdi",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values conforming to ISO/IEC 11179 series global identifier sequences"
+    },
+    "label" : "IRDI"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/Iri",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing values of type STRING conformant to Rfc 3987"
+    },
+    "label" : "IRI"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/Rational",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing values of type rational"
+    },
+    "label" : "Rational"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/RationalMeasure",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing values of type rational. In addition such a value comes with a physical unit."
+    },
+    "label" : "Rational Measure"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/RealCount",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing numbers that can be written as a terminating or non-terminating decimal; a rational or irrational number but are no currencies or measures"
+    },
+    "label" : "Real Count"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/RealCurrency",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing values of type REAL that are currencies"
+    },
+    "label" : "Real Currency"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/RealMeasure",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing values that are measures of type REAL. In addition such a value comes with a physical unit."
+    },
+    "label" : "Real Measure"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/String",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values consisting of sequence of characters but cannot be translated into other languages"
+    },
+    "label" : "String"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/StringTranslatable",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing string but shall be represented as different string in different languages"
+    },
+    "label" : "String Translatable"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/Time",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing a time, conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml."
+    },
+    "label" : "Time"
+  }, {
+    "@id" : "aas:DataTypeIEC61360/Timestamp",
+    "rdf:type" : {
+      "@id" : "aas:DataTypeIEC61360"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "values containing a time, conformant to ISO 8601:2004 but restricted to what is allowed in the corresponding type in xml."
+    },
+    "label" : "Timestamp"
+  }, {
+    "@id" : "aas:Direction",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Direction"
+    },
+    "label" : "Direction",
+    "oneOf" : {
+      "@list" : [ "aas:Direction/Input", "aas:Direction/Output" ]
+    }
+  }, {
+    "@id" : "aas:Direction/Input",
+    "rdf:type" : {
+      "@id" : "aas:Direction"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Input direction."
+    },
+    "label" : "Input"
+  }, {
+    "@id" : "aas:Direction/Output",
+    "rdf:type" : {
+      "@id" : "aas:Direction"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Output direction"
+    },
+    "label" : "Output"
+  }, {
+    "@id" : "aas:EmbeddedDataSpecification",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Embed the content of a data specification."
+    },
+    "label" : "Embedded Data Specification"
+  }, {
+    "@id" : "aas:EmbeddedDataSpecification/dataSpecification",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to the data specification"
+    },
+    "domain" : "aas:EmbeddedDataSpecification",
+    "label" : "has data specification",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "dataSpecification:Content",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Actual content of the data specification"
+    },
+    "domain" : "aas:EmbeddedDataSpecification",
+    "label" : "has data specification content",
+    "range" : "aas:DataSpecificationContent"
+  }, {
+    "@id" : "aas:Entity",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An entity is a submodel element that is used to model entities."
+    },
+    "label" : "Entity",
+    "subClassOf" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:Entity/entityType",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Describes whether the entity is a co-managed entity or a self-managed entity."
+    },
+    "domain" : "aas:Entity",
+    "label" : "has entity type",
+    "range" : "aas:EntityType"
+  }, {
+    "@id" : "aas:Entity/globalAssetId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Global identifier of the asset the entity is representing."
+    },
+    "domain" : "aas:Entity",
+    "label" : "has global asset id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:Entity/specificAssetId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to a specific asset ID representing a supplementary identifier of the asset represented by the Asset Administration Shell."
+    },
+    "domain" : "aas:Entity",
+    "label" : "has specific asset id",
+    "range" : "aas:SpecificAssetId"
+  }, {
+    "@id" : "aas:Entity/statements",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Describes statements applicable to the entity by a set of submodel elements, typically with a qualified value."
+    },
+    "domain" : "aas:Entity",
+    "label" : "has statements",
+    "range" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:EntityType",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Enumeration for denoting whether an entity is a self-managed entity or a co-managed entity."
+    },
+    "label" : "Entity Type",
+    "oneOf" : {
+      "@list" : [ "aas:EntityType/CoManagedEntity", "aas:EntityType/SelfManagedEntity" ]
+    }
+  }, {
+    "@id" : "aas:EntityType/CoManagedEntity",
+    "rdf:type" : {
+      "@id" : "aas:EntityType"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "For co-managed entities there is no separate AAS. Co-managed entities need to be part of a self-managed entity."
+    },
+    "label" : "Co Managed Entity"
+  }, {
+    "@id" : "aas:EntityType/SelfManagedEntity",
+    "rdf:type" : {
+      "@id" : "aas:EntityType"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Self-Managed Entities have their own AAS but can be part of the bill of material of a composite self-managed entity."
+    },
+    "label" : "Self Managed Entity"
+  }, {
+    "@id" : "aas:Environment",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Container for the sets of different identifiables."
+    },
+    "label" : "Environment"
+  }, {
+    "@id" : "aas:Environment/assetAdministrationShells",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Asset administration shell"
+    },
+    "domain" : "aas:Environment",
+    "label" : "has asset administration shells",
+    "range" : "aas:AssetAdministrationShell"
+  }, {
+    "@id" : "aas:Environment/conceptDescriptions",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Concept description"
+    },
+    "domain" : "aas:Environment",
+    "label" : "has concept descriptions",
+    "range" : "aas:ConceptDescription"
+  }, {
+    "@id" : "aas:Environment/submodels",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Submodel"
+    },
+    "domain" : "aas:Environment",
+    "label" : "has submodels",
+    "range" : "aas:Submodel"
+  }, {
+    "@id" : "aas:EventElement",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An event element."
+    },
+    "label" : "Event Element",
+    "subClassOf" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:EventPayload",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Defines the necessary information of an event instance sent out or received."
+    },
+    "label" : "Event Payload"
+  }, {
+    "@id" : "aas:EventPayload/observableReference",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to the referable, which defines the scope of the event."
+    },
+    "domain" : "aas:EventPayload",
+    "label" : "has observable reference",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:EventPayload/observableSemanticId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "'semanticId' of the referable which defines the scope of the event, if available."
+    },
+    "domain" : "aas:EventPayload",
+    "label" : "has observable semantic id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:EventPayload/payload",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Event specific payload."
+    },
+    "domain" : "aas:EventPayload",
+    "label" : "has payload",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:EventPayload/source",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to the source event element, including identification of 'AssetAdministrationShell', 'Submodel', 'SubmodelElement''s."
+    },
+    "domain" : "aas:EventPayload",
+    "label" : "has source",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:EventPayload/sourceSemanticId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "'semanticId' of the source event element, if available"
+    },
+    "domain" : "aas:EventPayload",
+    "label" : "has source semantic id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:EventPayload/subjectId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Subject, who/which initiated the creation."
+    },
+    "domain" : "aas:EventPayload",
+    "label" : "has subject id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:EventPayload/timeStamp",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Timestamp in UTC, when this event was triggered."
+    },
+    "domain" : "aas:EventPayload",
+    "label" : "has time stamp",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:EventPayload/topic",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Information for the outer message infrastructure for scheduling the event to the respective communication channel."
+    },
+    "domain" : "aas:EventPayload",
+    "label" : "has topic",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Extension",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Single extension of an element."
+    },
+    "label" : "Extension",
+    "subClassOf" : "aas:HasSemantics"
+  }, {
+    "@id" : "aas:Extension/name",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Name of the extension."
+    },
+    "domain" : "aas:Extension",
+    "label" : "has name",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Extension/refersTo",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to an element the extension refers to."
+    },
+    "domain" : "aas:Extension",
+    "label" : "has refers to",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:Extension/value",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Value of the extension"
+    },
+    "domain" : "aas:Extension",
+    "label" : "has value",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Extension/valueType",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Type of the value of the extension."
+    },
+    "domain" : "aas:Extension",
+    "label" : "has value type",
+    "range" : "aas:DataTypeDefXsd"
+  }, {
+    "@id" : "aas:File",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A File is a data element that represents an address to a file (a locator)."
+    },
+    "label" : "File",
+    "subClassOf" : "aas:DataElement"
+  }, {
+    "@id" : "aas:File/contentType",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Content type of the content of the file."
+    },
+    "domain" : "aas:File",
+    "label" : "has content type",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:File/value",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Path and name of the referenced file (with file extension)."
+    },
+    "domain" : "aas:File",
+    "label" : "has value",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:HasDataSpecification",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Element that can be extended by using data specification templates."
+    },
+    "label" : "Has Data Specification"
+  }, {
+    "@id" : "aas:HasDataSpecification/embeddedDataSpecifications",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Embedded data specification."
+    },
+    "domain" : "aas:HasDataSpecification",
+    "label" : "has embedded data specifications",
+    "range" : "aas:EmbeddedDataSpecification"
+  }, {
+    "@id" : "aas:HasExtensions",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Element that can be extended by proprietary extensions."
+    },
+    "label" : "Has Extensions"
+  }, {
+    "@id" : "aas:HasExtensions/extensions",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An extension of the element."
+    },
+    "domain" : "aas:HasExtensions",
+    "label" : "has extensions",
+    "range" : "aas:Extension"
+  }, {
+    "@id" : "aas:HasKind",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An element with a kind is an element that can either represent a template or an instance."
+    },
+    "label" : "Has Kind"
+  }, {
+    "@id" : "aas:HasKind/kind",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Kind of the element: either type or instance."
+    },
+    "domain" : "aas:HasKind",
+    "label" : "has kind",
+    "range" : "aas:ModelingKind"
+  }, {
+    "@id" : "aas:HasSemantics",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Element that can have a semantic definition plus some supplemental semantic definitions."
+    },
+    "label" : "Has Semantics"
+  }, {
+    "@id" : "aas:HasSemantics/semanticId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Identifier of the semantic definition of the element. It is called semantic ID of the element or also main semantic ID of the element."
+    },
+    "domain" : "aas:HasSemantics",
+    "label" : "has semantic id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:HasSemantics/supplementalSemanticIds",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Identifier of a supplemental semantic definition of the element. It is called supplemental semantic ID of the element."
+    },
+    "domain" : "aas:HasSemantics",
+    "label" : "has supplemental semantic ids",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:Identifiable",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An element that has a globally unique identifier."
+    },
+    "label" : "Identifiable",
+    "subClassOf" : "aas:Referable"
+  }, {
+    "@id" : "aas:Identifiable/administration",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Administrative information of an identifiable element."
+    },
+    "domain" : "aas:Identifiable",
+    "label" : "has administration",
+    "range" : "aas:AdministrativeInformation"
+  }, {
+    "@id" : "aas:Identifiable/id",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The globally unique identification of the element."
+    },
+    "domain" : "aas:Identifiable",
+    "label" : "has id",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Key",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A key is a reference to an element by its ID."
+    },
+    "label" : "Key"
+  }, {
+    "@id" : "aas:Key/type",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Denotes which kind of entity is referenced."
+    },
+    "domain" : "aas:Key",
+    "label" : "has type",
+    "range" : "aas:KeyTypes"
+  }, {
+    "@id" : "aas:Key/value",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The key value, for example an IRDI or an URI"
+    },
+    "domain" : "aas:Key",
+    "label" : "has value",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:KeyTypes",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Enumeration of different key value types within a key."
+    },
+    "label" : "Key Types",
+    "oneOf" : {
+      "@list" : [ "aas:KeyTypes/AnnotatedRelationshipElement", "aas:KeyTypes/AssetAdministrationShell", "aas:KeyTypes/BasicEventElement", "aas:KeyTypes/Blob", "aas:KeyTypes/Capability", "aas:KeyTypes/ConceptDescription", "aas:KeyTypes/DataElement", "aas:KeyTypes/Entity", "aas:KeyTypes/EventElement", "aas:KeyTypes/File", "aas:KeyTypes/FragmentReference", "aas:KeyTypes/GlobalReference", "aas:KeyTypes/Identifiable", "aas:KeyTypes/MultiLanguageProperty", "aas:KeyTypes/Operation", "aas:KeyTypes/Property", "aas:KeyTypes/Range", "aas:KeyTypes/Referable", "aas:KeyTypes/ReferenceElement", "aas:KeyTypes/RelationshipElement", "aas:KeyTypes/Submodel", "aas:KeyTypes/SubmodelElement", "aas:KeyTypes/SubmodelElementCollection", "aas:KeyTypes/SubmodelElementList" ]
+    }
+  }, {
+    "@id" : "aas:KeyTypes/AnnotatedRelationshipElement",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Annotated Relationship Element"
+  }, {
+    "@id" : "aas:KeyTypes/AssetAdministrationShell",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Asset Administration Shell"
+  }, {
+    "@id" : "aas:KeyTypes/BasicEventElement",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Basic Event Element"
+  }, {
+    "@id" : "aas:KeyTypes/Blob",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Blob"
+  }, {
+    "@id" : "aas:KeyTypes/Capability",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Capability"
+  }, {
+    "@id" : "aas:KeyTypes/ConceptDescription",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Concept Description"
+  }, {
+    "@id" : "aas:KeyTypes/DataElement",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Data element."
+    },
+    "label" : "Data Element"
+  }, {
+    "@id" : "aas:KeyTypes/Entity",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Entity"
+  }, {
+    "@id" : "aas:KeyTypes/EventElement",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Event."
+    },
+    "label" : "Event Element"
+  }, {
+    "@id" : "aas:KeyTypes/File",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "File"
+  }, {
+    "@id" : "aas:KeyTypes/FragmentReference",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Bookmark or a similar local identifier of a subordinate part of a primary resource"
+    },
+    "label" : "Fragment Reference"
+  }, {
+    "@id" : "aas:KeyTypes/GlobalReference",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Global Reference"
+  }, {
+    "@id" : "aas:KeyTypes/Identifiable",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Identifiable."
+    },
+    "label" : "Identifiable"
+  }, {
+    "@id" : "aas:KeyTypes/MultiLanguageProperty",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Property with a value that can be provided in multiple languages"
+    },
+    "label" : "Multi Language Property"
+  }, {
+    "@id" : "aas:KeyTypes/Operation",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Operation"
+  }, {
+    "@id" : "aas:KeyTypes/Property",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Property"
+  }, {
+    "@id" : "aas:KeyTypes/Range",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Range with min and max"
+    },
+    "label" : "Range"
+  }, {
+    "@id" : "aas:KeyTypes/Referable",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Referable"
+  }, {
+    "@id" : "aas:KeyTypes/ReferenceElement",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference"
+    },
+    "label" : "Reference Element"
+  }, {
+    "@id" : "aas:KeyTypes/RelationshipElement",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Relationship"
+    },
+    "label" : "Relationship Element"
+  }, {
+    "@id" : "aas:KeyTypes/Submodel",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "label" : "Submodel"
+  }, {
+    "@id" : "aas:KeyTypes/SubmodelElement",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Submodel Element"
+    },
+    "label" : "Submodel Element"
+  }, {
+    "@id" : "aas:KeyTypes/SubmodelElementCollection",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Struct of Submodel Elements"
+    },
+    "label" : "Submodel Element Collection"
+  }, {
+    "@id" : "aas:KeyTypes/SubmodelElementList",
+    "rdf:type" : {
+      "@id" : "aas:KeyTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "List of Submodel Elements"
+    },
+    "label" : "Submodel Element List"
+  }, {
+    "@id" : "aas:LevelType",
+    "@type" : "owl:Class",
+    "label" : "Level Type",
+    "oneOf" : {
+      "@list" : [ "aas:LevelType/Max", "aas:LevelType/Min", "aas:LevelType/Nom", "aas:LevelType/Typ" ]
+    }
+  }, {
+    "@id" : "aas:LevelType/Max",
+    "rdf:type" : {
+      "@id" : "aas:LevelType"
+    },
+    "label" : "Max"
+  }, {
+    "@id" : "aas:LevelType/Min",
+    "rdf:type" : {
+      "@id" : "aas:LevelType"
+    },
+    "label" : "Min"
+  }, {
+    "@id" : "aas:LevelType/Nom",
+    "rdf:type" : {
+      "@id" : "aas:LevelType"
+    },
+    "label" : "Nom"
+  }, {
+    "@id" : "aas:LevelType/Typ",
+    "rdf:type" : {
+      "@id" : "aas:LevelType"
+    },
+    "label" : "Typ"
+  }, {
+    "@id" : "aas:ModelingKind",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Enumeration for denoting whether an element is a template or an instance."
+    },
+    "label" : "Modeling Kind",
+    "oneOf" : {
+      "@list" : [ "aas:ModelingKind/Instance", "aas:ModelingKind/Template" ]
+    }
+  }, {
+    "@id" : "aas:ModelingKind/Instance",
+    "rdf:type" : {
+      "@id" : "aas:ModelingKind"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Concrete, clearly identifiable component of a certain template."
+    },
+    "label" : "Instance"
+  }, {
+    "@id" : "aas:ModelingKind/Template",
+    "rdf:type" : {
+      "@id" : "aas:ModelingKind"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Software element which specifies the common attributes shared by all instances of the template."
+    },
+    "label" : "Template"
+  }, {
+    "@id" : "aas:MultiLanguageProperty",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A property is a data element that has a multi-language value."
+    },
+    "label" : "Multi Language Property",
+    "subClassOf" : "aas:DataElement"
+  }, {
+    "@id" : "aas:MultiLanguageProperty/value",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The value of the property instance."
+    },
+    "domain" : "aas:MultiLanguageProperty",
+    "label" : "has value",
+    "range" : "rdf:langString"
+  }, {
+    "@id" : "aas:MultiLanguageProperty/valueId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to the global unique ID of a coded value."
+    },
+    "domain" : "aas:MultiLanguageProperty",
+    "label" : "has value id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:Operation",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An operation is a submodel element with input and output variables."
+    },
+    "label" : "Operation",
+    "subClassOf" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:Operation/inoutputVariables",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Parameter that is input and output of the operation."
+    },
+    "domain" : "aas:Operation",
+    "label" : "has inoutput variables",
+    "range" : "aas:OperationVariable"
+  }, {
+    "@id" : "aas:Operation/inputVariables",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Input parameter of the operation."
+    },
+    "domain" : "aas:Operation",
+    "label" : "has input variables",
+    "range" : "aas:OperationVariable"
+  }, {
+    "@id" : "aas:Operation/outputVariables",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Output parameter of the operation."
+    },
+    "domain" : "aas:Operation",
+    "label" : "has output variables",
+    "range" : "aas:OperationVariable"
+  }, {
+    "@id" : "aas:OperationVariable",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The value of an operation variable is a submodel element that is used as input and/or output variable of an operation."
+    },
+    "label" : "Operation Variable"
+  }, {
+    "@id" : "aas:OperationVariable/value",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Describes an argument or result of an operation via a submodel element"
+    },
+    "domain" : "aas:OperationVariable",
+    "label" : "has value",
+    "range" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:Property",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A property is a data element that has a single value."
+    },
+    "label" : "Property",
+    "subClassOf" : "aas:DataElement"
+  }, {
+    "@id" : "aas:Property/value",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The value of the property instance."
+    },
+    "domain" : "aas:Property",
+    "label" : "has value",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Property/valueId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to the global unique ID of a coded value."
+    },
+    "domain" : "aas:Property",
+    "label" : "has value id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:Property/valueType",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Data type of the value"
+    },
+    "domain" : "aas:Property",
+    "label" : "has value type",
+    "range" : "aas:DataTypeDefXsd"
+  }, {
+    "@id" : "aas:Qualifiable",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The value of a qualifiable element may be further qualified by one or more qualifiers."
+    },
+    "label" : "Qualifiable"
+  }, {
+    "@id" : "aas:Qualifiable/qualifiers",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Additional qualification of a qualifiable element."
+    },
+    "domain" : "aas:Qualifiable",
+    "label" : "has qualifiers",
+    "range" : "aas:Qualifier"
+  }, {
+    "@id" : "aas:Qualifier",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A qualifier is a type-value-pair that makes additional statements w.r.t. the value of the element."
+    },
+    "label" : "Qualifier",
+    "subClassOf" : "aas:HasSemantics"
+  }, {
+    "@id" : "aas:Qualifier/kind",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The qualifier kind describes the kind of the qualifier that is applied to the element."
+    },
+    "domain" : "aas:Qualifier",
+    "label" : "has kind",
+    "range" : "aas:QualifierKind"
+  }, {
+    "@id" : "aas:Qualifier/type",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The qualifier type describes the type of the qualifier that is applied to the element."
+    },
+    "domain" : "aas:Qualifier",
+    "label" : "has type",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Qualifier/value",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The qualifier value is the value of the qualifier."
+    },
+    "domain" : "aas:Qualifier",
+    "label" : "has value",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Qualifier/valueId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to the global unique ID of a coded value."
+    },
+    "domain" : "aas:Qualifier",
+    "label" : "has value id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:Qualifier/valueType",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Data type of the qualifier value."
+    },
+    "domain" : "aas:Qualifier",
+    "label" : "has value type",
+    "range" : "aas:DataTypeDefXsd"
+  }, {
+    "@id" : "aas:QualifierKind",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Enumeration for kinds of qualifiers."
+    },
+    "label" : "Qualifier Kind",
+    "oneOf" : {
+      "@list" : [ "aas:QualifierKind/ConceptQualifier", "aas:QualifierKind/TemplateQualifier", "aas:QualifierKind/ValueQualifier" ]
+    }
+  }, {
+    "@id" : "aas:QualifierKind/ConceptQualifier",
+    "rdf:type" : {
+      "@id" : "aas:QualifierKind"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "qualifies the semantic definition the element is referring to ('semanticId')"
+    },
+    "label" : "Concept Qualifier"
+  }, {
+    "@id" : "aas:QualifierKind/TemplateQualifier",
+    "rdf:type" : {
+      "@id" : "aas:QualifierKind"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "qualifies the elements within a specific submodel on concept level."
+    },
+    "label" : "Template Qualifier"
+  }, {
+    "@id" : "aas:QualifierKind/ValueQualifier",
+    "rdf:type" : {
+      "@id" : "aas:QualifierKind"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "qualifies the value of the element and can change during run-time."
+    },
+    "label" : "Value Qualifier"
+  }, {
+    "@id" : "aas:Range",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A range data element is a data element that defines a range with min and max."
+    },
+    "label" : "Range",
+    "subClassOf" : "aas:DataElement"
+  }, {
+    "@id" : "aas:Range/max",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The maximum value of the range."
+    },
+    "domain" : "aas:Range",
+    "label" : "has max",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Range/min",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The minimum value of the range."
+    },
+    "domain" : "aas:Range",
+    "label" : "has min",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Range/valueType",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Data type of the min und max"
+    },
+    "domain" : "aas:Range",
+    "label" : "has value type",
+    "range" : "aas:DataTypeDefXsd"
+  }, {
+    "@id" : "aas:Referable",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "An element that is referable by its 'idShort'."
+    },
+    "label" : "Referable",
+    "subClassOf" : "aas:HasExtensions"
+  }, {
+    "@id" : "aas:Referable/category",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The category is a value that gives further meta information w.r.t. to the class of the element. It affects the expected existence of attributes and the applicability of constraints."
+    },
+    "domain" : "aas:Referable",
+    "label" : "has category",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Referable/checksum",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Checksum to be used to determine if an Referable (including its aggregated child elements) has changed."
+    },
+    "domain" : "aas:Referable",
+    "label" : "has checksum",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Referable/description",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Description or comments on the element."
+    },
+    "domain" : "aas:Referable",
+    "label" : "has description",
+    "range" : "rdf:langString"
+  }, {
+    "@id" : "aas:Referable/displayName",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Display name. Can be provided in several languages."
+    },
+    "domain" : "aas:Referable",
+    "label" : "has display name",
+    "range" : "rdf:langString"
+  }, {
+    "@id" : "aas:Referable/idShort",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "In case of identifiables this attribute is a short name of the element. In case of referable this ID is an identifying string of the element within its name space."
+    },
+    "domain" : "aas:Referable",
+    "label" : "has id short",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Reference",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to either a model element of the same or another AAS or to an external entity."
+    },
+    "label" : "Reference"
+  }, {
+    "@id" : "aas:Reference/keys",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Unique references in their name space."
+    },
+    "domain" : "aas:Reference",
+    "label" : "has keys",
+    "range" : "aas:Key"
+  }, {
+    "@id" : "aas:Reference/referredSemanticId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "'semanticId' of the referenced model element ('type' = 'ModelReference')."
+    },
+    "domain" : "aas:Reference",
+    "label" : "has referred semantic id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:Reference/type",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Type of the reference."
+    },
+    "domain" : "aas:Reference",
+    "label" : "has type",
+    "range" : "aas:ReferenceTypes"
+  }, {
+    "@id" : "aas:ReferenceElement",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A reference element is a data element that defines a logical reference to another element within the same or another AAS or a reference to an external object or entity."
+    },
+    "label" : "Reference Element",
+    "subClassOf" : "aas:DataElement"
+  }, {
+    "@id" : "aas:ReferenceElement/value",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Global reference to an external object or entity or a logical reference to another element within the same or another AAS (i.e. a model reference to a Referable)."
+    },
+    "domain" : "aas:ReferenceElement",
+    "label" : "has value",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:ReferenceTypes",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "ReferenceTypes"
+    },
+    "label" : "Reference Types",
+    "oneOf" : {
+      "@list" : [ "aas:ReferenceTypes/GlobalReference", "aas:ReferenceTypes/ModelReference" ]
+    }
+  }, {
+    "@id" : "aas:ReferenceTypes/GlobalReference",
+    "rdf:type" : {
+      "@id" : "aas:ReferenceTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "GlobalReference."
+    },
+    "label" : "Global Reference"
+  }, {
+    "@id" : "aas:ReferenceTypes/ModelReference",
+    "rdf:type" : {
+      "@id" : "aas:ReferenceTypes"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "ModelReference"
+    },
+    "label" : "Model Reference"
+  }, {
+    "@id" : "aas:RelationshipElement",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A relationship element is used to define a relationship between two elements being either referable (model reference) or external (global reference)."
+    },
+    "label" : "Relationship Element",
+    "subClassOf" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:RelationshipElement/first",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to the first element in the relationship taking the role of the subject."
+    },
+    "domain" : "aas:RelationshipElement",
+    "label" : "has first",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:RelationshipElement/second",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Reference to the second element in the relationship taking the role of the object."
+    },
+    "domain" : "aas:RelationshipElement",
+    "label" : "has second",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:Resource",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Resource represents an address to a file (a locator). The value is an URI that can represent an absolute or relative path"
+    },
+    "label" : "Resource"
+  }, {
+    "@id" : "aas:Resource/contentType",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Content type of the content of the file."
+    },
+    "domain" : "aas:Resource",
+    "label" : "has content type",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:Resource/path",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Path and name of the resource (with file extension)."
+    },
+    "domain" : "aas:Resource",
+    "label" : "has path",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:SpecificAssetId",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A specific asset ID describes a generic supplementary identifying attribute of the asset."
+    },
+    "label" : "Specific Asset Id",
+    "subClassOf" : "aas:HasSemantics"
+  }, {
+    "@id" : "aas:SpecificAssetId/externalSubjectId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The (external) subject the key belongs to or has meaning to."
+    },
+    "domain" : "aas:SpecificAssetId",
+    "label" : "has external subject id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:SpecificAssetId/name",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Name of the identifier"
+    },
+    "domain" : "aas:SpecificAssetId",
+    "label" : "has name",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:SpecificAssetId/value",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The value of the specific asset identifier with the corresponding name."
+    },
+    "domain" : "aas:SpecificAssetId",
+    "label" : "has value",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:StateOfEvent",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "State of an event"
+    },
+    "label" : "State Of Event",
+    "oneOf" : {
+      "@list" : [ "aas:StateOfEvent/Off", "aas:StateOfEvent/On" ]
+    }
+  }, {
+    "@id" : "aas:StateOfEvent/Off",
+    "rdf:type" : {
+      "@id" : "aas:StateOfEvent"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Event is off."
+    },
+    "label" : "Off"
+  }, {
+    "@id" : "aas:StateOfEvent/On",
+    "rdf:type" : {
+      "@id" : "aas:StateOfEvent"
+    },
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Event is on"
+    },
+    "label" : "On"
+  }, {
+    "@id" : "aas:Submodel",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A submodel defines a specific aspect of the asset represented by the AAS."
+    },
+    "label" : "Submodel",
+    "subClassOf" : [ "aas:HasDataSpecification", "aas:Qualifiable", "aas:HasSemantics", "aas:HasKind", "aas:Identifiable" ]
+  }, {
+    "@id" : "aas:Submodel/submodelElements",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A submodel consists of zero or more submodel elements."
+    },
+    "domain" : "aas:Submodel",
+    "label" : "has submodel elements",
+    "range" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:SubmodelElement",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A submodel element is an element suitable for the description and differentiation of assets."
+    },
+    "label" : "Submodel Element",
+    "subClassOf" : [ "aas:HasDataSpecification", "aas:Qualifiable", "aas:HasSemantics", "aas:HasKind", "aas:Referable" ]
+  }, {
+    "@id" : "aas:SubmodelElementCollection",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A submodel element collection is a kind of struct, i.e. a a logical encapsulation of multiple named values. It has a fixed number of submodel elements."
+    },
+    "label" : "Submodel Element Collection",
+    "subClassOf" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:SubmodelElementCollection/value",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Submodel element contained in the collection."
+    },
+    "domain" : "aas:SubmodelElementCollection",
+    "label" : "has value",
+    "range" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:SubmodelElementList",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A submodel element list is an ordered list of submodel elements."
+    },
+    "label" : "Submodel Element List",
+    "subClassOf" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:SubmodelElementList/orderRelevant",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Defines whether order in list is relevant. If 'orderRelevant' = False then the list is representing a set or a bag."
+    },
+    "domain" : "aas:SubmodelElementList",
+    "label" : "has order relevant",
+    "range" : "xs:boolean"
+  }, {
+    "@id" : "aas:SubmodelElementList/semanticIdListElement",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Semantic ID the submodel elements contained in the list match to."
+    },
+    "domain" : "aas:SubmodelElementList",
+    "label" : "has semantic id list element",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "aas:SubmodelElementList/typeValueListElement",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The submodel element type of the submodel elements contained in the list."
+    },
+    "domain" : "aas:SubmodelElementList",
+    "label" : "has type value list element",
+    "range" : "aas:AasSubmodelElements"
+  }, {
+    "@id" : "aas:SubmodelElementList/value",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Submodel element contained in the list."
+    },
+    "domain" : "aas:SubmodelElementList",
+    "label" : "has value",
+    "range" : "aas:SubmodelElement"
+  }, {
+    "@id" : "aas:SubmodelElementList/valueTypeListElement",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The value type of the submodel element contained in the list."
+    },
+    "domain" : "aas:SubmodelElementList",
+    "label" : "has value type list element",
+    "range" : "aas:DataTypeDefXsd"
+  }, {
+    "@id" : "aas:ValueList",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A set of value reference pairs."
+    },
+    "label" : "Value List"
+  }, {
+    "@id" : "aas:ValueList/valueReferencePairs",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A pair of a value together with its global unique id."
+    },
+    "domain" : "aas:ValueList",
+    "label" : "has value reference pairs",
+    "range" : "aas:ValueReferencePair"
+  }, {
+    "@id" : "aas:ValueReferencePair",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "A value reference pair within a value list. Each value has a global unique id defining its semantic."
+    },
+    "label" : "Value Reference Pair"
+  }, {
+    "@id" : "aas:ValueReferencePair/value",
+    "@type" : "owl:DatatypeProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "The value of the referenced concept definition of the value in valueId."
+    },
+    "domain" : "aas:ValueReferencePair",
+    "label" : "has value",
+    "range" : "xs:string"
+  }, {
+    "@id" : "aas:ValueReferencePair/valueId",
+    "@type" : "owl:ObjectProperty",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Global unique id of the value."
+    },
+    "domain" : "aas:ValueReferencePair",
+    "label" : "has value id",
+    "range" : "aas:Reference"
+  }, {
+    "@id" : "https://admin-shell.io/https://acplt.org/Test_ConceptDescription",
+    "rdf:type" : {
+      "@id" : "aas:ConceptDescription"
+    },
+    "isCaseOf" : "_:b433",
+    "administration" : "_:b391",
+    "id" : "https://acplt.org/Test_ConceptDescription",
+    "description" : [ {
+      "@language" : "de",
+      "@value" : "Ein Beispiel-ConceptDescription für eine Test-Anwendung"
+    }, {
+      "@language" : "en-us",
+      "@value" : "An example concept description for the test application"
+    } ],
+    "idShort" : "TestConceptDescription"
+  } ],
+  "@context" : {
+    "value" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/OperationVariable/value",
+      "@type" : "@id"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "valueType" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Property/valueType",
+      "@type" : "@id"
+    },
+    "kind" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/HasKind/kind",
+      "@type" : "@id"
+    },
+    "semanticId" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/HasSemantics/semanticId",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Referable/description"
+    },
+    "category" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Referable/category"
+    },
+    "idShort" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Referable/idShort"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "contentType" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Blob/contentType"
+    },
+    "type" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Key/type",
+      "@type" : "@id"
+    },
+    "keys" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Reference/keys",
+      "@type" : "@id"
+    },
+    "valueReferencePairs" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/ValueList/valueReferencePairs",
+      "@type" : "@id"
+    },
+    "globalAssetId" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/AssetInformation/globalAssetId",
+      "@type" : "@id"
+    },
+    "assetKind" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/AssetInformation/assetKind",
+      "@type" : "@id"
+    },
+    "qualifiers" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Qualifiable/qualifiers",
+      "@type" : "@id"
+    },
+    "version" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/AdministrativeInformation/version"
+    },
+    "valueId" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Property/valueId",
+      "@type" : "@id"
+    },
+    "second" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/RelationshipElement/second",
+      "@type" : "@id"
+    },
+    "oneOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#oneOf",
+      "@type" : "@id"
+    },
+    "max" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Range/max"
+    },
+    "min" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Range/min"
+    },
+    "valueFormat" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/valueFormat"
+    },
+    "preferredName" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/preferredName"
+    },
+    "shortName" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/shortName"
+    },
+    "levelType" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/levelType",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/definition"
+    },
+    "symbol" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/symbol"
+    },
+    "valueList" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/valueList",
+      "@type" : "@id"
+    },
+    "unitId" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/unitId",
+      "@type" : "@id"
+    },
+    "sourceOfDefinition" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/sourceOfDefinition"
+    },
+    "dataType" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/dataType",
+      "@type" : "@id"
+    },
+    "unit" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/DataSpecificationIEC61360/unit"
+    },
+    "submodels" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/AssetAdministrationShell/submodels",
+      "@type" : "@id"
+    },
+    "assetInformation" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/AssetAdministrationShell/assetInformation",
+      "@type" : "@id"
+    },
+    "id" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Identifiable/id"
+    },
+    "entityType" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Entity/entityType",
+      "@type" : "@id"
+    },
+    "statements" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Entity/statements",
+      "@type" : "@id"
+    },
+    "submodelElements" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Submodel/submodelElements",
+      "@type" : "@id"
+    },
+    "administration" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Identifiable/administration",
+      "@type" : "@id"
+    },
+    "direction" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/BasicEventElement/direction",
+      "@type" : "@id"
+    },
+    "state" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/BasicEventElement/state",
+      "@type" : "@id"
+    },
+    "observed" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/BasicEventElement/observed",
+      "@type" : "@id"
+    },
+    "revision" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/AdministrativeInformation/revision"
+    },
+    "embeddedDataSpecifications" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/HasDataSpecification/embeddedDataSpecifications",
+      "@type" : "@id"
+    },
+    "isCaseOf" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/ConceptDescription/isCaseOf",
+      "@type" : "@id"
+    },
+    "derivedFrom" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/AssetAdministrationShell/derivedFrom",
+      "@type" : "@id"
+    },
+    "inoutputVariables" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Operation/inoutputVariables",
+      "@type" : "@id"
+    },
+    "inputVariables" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Operation/inputVariables",
+      "@type" : "@id"
+    },
+    "outputVariables" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Operation/outputVariables",
+      "@type" : "@id"
+    },
+    "annotations" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/AnnotatedRelationshipElement/annotations",
+      "@type" : "@id"
+    },
+    "assetAdministrationShells" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Environment/assetAdministrationShells",
+      "@type" : "@id"
+    },
+    "conceptDescriptions" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/Environment/conceptDescriptions",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "dataSpecificationContent" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/EmbeddedDataSpecification/dataSpecificationContent",
+      "@type" : "@id"
+    },
+    "dataSpecification" : {
+      "@id" : "https://admin-shell.io/aas/3/0/RC02/EmbeddedDataSpecification/dataSpecification",
+      "@type" : "@id"
+    },
+    "iecType" : "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0/RC02/DataTypeIEC61360/",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "aas" : "https://admin-shell.io/aas/3/0/RC02/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "sh" : "http://www.w3.org/ns/shacl#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "phys_unit" : "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationPhysicalUnit/3/0/RC01/",
+    "xs" : "http://www.w3.org/2001/XMLSchema#",
+    "iec61360" : "https://admin-shell.io/DataSpecificationTemplates/DataSpecificationIEC61360/3/0/RC02/",
+    "dash" : "http://datashapes.org/dash#",
+    "vann" : "http://purl.org/vocab/vann/",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}

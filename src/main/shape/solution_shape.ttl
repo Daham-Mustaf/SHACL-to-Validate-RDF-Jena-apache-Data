@@ -1,0 +1,277 @@
+@prefix gax-validation: <http://example.com/validation#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix trusted-cloud: <http://example.com/vocabulary/trusted-cloud#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+gax-validation:ProviderLegalInformationShape a sh:NodeShape ;
+    sh:property [ skos:example "'Cloud Service'" ;
+            sh:datatype xsd:string ;
+            sh:description "Art der angebotenen Anwendung"@de,
+                "Type of Application offered"@en ;
+            sh:in ( "Cloud Service" "Cloud Consultants & Cloud Service" ) ;
+            sh:maxCount 1 ;
+            sh:name "type of application" ;
+            sh:order 1 ;
+            sh:path trusted-cloud:typeOfApplication ],
+        [ skos:example "'(Tom Mustermann, tom.mustermann@acme.com, +49 030 123456789)'" ;
+            sh:description "Ein Kontakt innerhalb einer Organisation, um technische Zwecke zu kontaktieren."@de,
+                "A contact within an organization to contact for technical purposes."@en ;
+            sh:maxCount 1 ;
+            sh:name "it department contact" ;
+            sh:node gax-validation:AgentShape ;
+            sh:order 8 ;
+            sh:path trusted-cloud:itDepartmentContact ],
+        [ skos:example "'(Sigfried Mustermann, sigfried.mustermann@acme.com, +49 030 123456789)'" ;
+            sh:description "Ein Kontakt innerhalb einer Organisation, um sich für Datenschutzzwecke zu wenden."@de,
+                "A contact within an organization to contact for data protection purposes."@en ;
+            sh:maxCount 1 ;
+            sh:name "legal contact" ;
+            sh:node gax-validation:AgentShape ;
+            sh:order 9 ;
+            sh:path trusted-cloud:legalContact ],
+        [ skos:example "'A company making everything'" ;
+            sh:datatype xsd:string ;
+            sh:description "Beschreibung der Organisation."@de,
+                "Description of the organization."@en ;
+            sh:maxCount 1 ;
+            sh:name "description" ;
+            sh:order 10 ;
+            sh:path trusted-cloud:description ],
+        [ skos:example "'ACME'" ;
+            sh:datatype xsd:string ;
+            sh:description "Rechtsbindender Name."@de,
+                "Legally binding name."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "legal name" ;
+            sh:order 1 ;
+            sh:path trusted-cloud:legalName ],
+        [ skos:example "'Company@de.com'" ;
+            sh:datatype xsd:string ;
+            sh:description "The email address. This field allows arbitrary strings."@en,
+            "Die E-Mail-Adresse. Dieses Feld erlaubt beliebige Zeichenketten."@de ;
+            sh:maxCount 1 ;
+#            sh:minCount 0 ;
+            sh:name "email address" ;
+            sh:order 2 ;
+            # sh:pattern ".+@.+[.].+" ;
+            # sh:flags "i" ;
+            sh:path trusted-cloud:emailAddress
+        ],
+        [ skos:example "'AG, GmbH'" ;
+            sh:datatype xsd:string ;
+            sh:description "Legal form of organization."@de,
+                "Legal form of organization."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "legal form" ;
+            sh:order 2 ;
+            sh:path trusted-cloud:legalForm ],
+        [ skos:example "'DEK1234R.HRB123456'" ;
+            sh:datatype xsd:string ;
+            sh:description "Country’s registration number which identify one specific company."@de,
+                "Country’s registration number which identify one specific company."@en ;
+            sh:maxCount 1 ;
+            sh:name "registration number" ;
+            sh:order 3 ;
+            sh:path trusted-cloud:registrationNumber ],
+        [ skos:example "'(a structured object ot tyoe vcard:Address)'" ;
+            sh:description "Adresse der Hauptsitz oder der Haupt Tochtergesellschaft."@de,
+                "Address of head office or main subsidiary."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "headquarter address" ;
+            sh:node gax-validation:AddressShape ;
+            sh:order 4 ;
+            sh:path trusted-cloud:headquarterAddress ],
+        [ skos:example "'www.acme.com'" ;
+            sh:datatype xsd:anyURI ;
+            sh:description "Resolvable URL to web page of this organization."@de,
+                "Resolvable URL to web page of this organization."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "web address" ;
+            sh:order 5 ;
+            sh:path trusted-cloud:webAddress ],
+        [ skos:example "'www.acme.com/logo'" ;
+            sh:datatype xsd:anyURI ;
+            sh:description "Auflösbare URL an das Logo dieser Organisation."@de,
+                "Resolvable URL to logo of this organization."@en ;
+            sh:maxCount 1 ;
+            sh:name "logo" ;
+            sh:order 6 ;
+            sh:path trusted-cloud:logo ],
+        [ skos:example "'DE999999999'" ;
+            sh:datatype xsd:string ;
+            sh:description "Organization’s VAT / sales tax-id number. Either vatNumber or registrationNumber has to be set."@de,
+                "Organization’s VAT / sales tax-id number. Either vatNumber or registrationNumber has to be set."@en ;
+            sh:maxCount 1 ;
+            sh:name "vat number" ;
+            sh:order 2 ;
+            sh:path trusted-cloud:vatNumber ],
+        [ skos:example "'2021-10-18T12:00:00+01:00'" ;
+            sh:datatype xsd:dateTimeStamp ;
+            sh:description "Datum der rechtlichen Registrierung."@de,
+                "Date of the legal registration."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "registration date" ;
+            sh:order 3 ;
+            sh:path trusted-cloud:registrationDate ],
+        [ skos:example "'True', 'False'" ;
+            sh:datatype xsd:boolean ;
+            sh:description "Is the company a 'small or medium sized' company?."@de,
+                "Is the company a 'small or medium sized' company?."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "sme" ;
+            sh:order 4 ;
+            sh:path trusted-cloud:sme ],
+        [ skos:example "'(a structured object ot tyoe vcard:Agent)'" ;
+            sh:description "Managing director or legal guardian of the organization."@de,
+                "Managing director or legal guardian of the organization."@en ;
+            sh:minCount 1 ;
+            sh:name "managing director" ;
+            sh:node gax-validation:AgentShape ;
+            sh:order 5 ;
+            sh:path trusted-cloud:managingDirector ],
+        [ skos:example "'(Jana Mustermann, jana.mustermann@acme.com, +49 030 123456789)'" ;
+            sh:description "Hauptkontakt der Organisation"@de,
+                "Main contact of the organization"@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "main contact" ;
+            sh:node gax-validation:AgentShape ;
+            sh:order 6 ;
+            sh:path trusted-cloud:mainContact ],
+        [ skos:example "'(Jane Mustermann, jane.mustermann@acme.com, +49 030 123456789)'" ;
+            sh:description "Ein Kontakt innerhalb einer Organisation, um sich für Datenschutzzwecke zu wenden."@de,
+                "A contact within an organization to contact for data protection purposes."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "data protection officer" ;
+            sh:node gax-validation:AgentShape ;
+            sh:order 7 ;
+            sh:path trusted-cloud:dataProtectionOfficer ] ;
+    sh:targetClass trusted-cloud:ProviderLegalInformation .
+
+gax-validation:AddressShape a sh:NodeShape ;
+    sh:property [ skos:example "'example-street'" ;
+            sh:datatype xsd:string ;
+            sh:description "The v:street-address property specifies the street address of a postal address."@de,
+                "The v:street-address property specifies the street address of a postal address."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "street-address" ;
+            sh:order 1 ;
+            sh:path vcard:street-address ],
+        [ skos:example "'5'" ;
+            sh:datatype xsd:integer ;
+            sh:description "Das V: Number -Eigenschaft gibt die Straßennummer einer Postanschrift an."@de,
+                "The v:number property specifies the street number of a postal address."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:minInclusive 1.0 ;
+            sh:name "number" ;
+            sh:order 2 ;
+            sh:path vcard:number ],
+        [
+            skos:example "'12345'" ;
+            sh:path vcard:postal-code ;
+            sh:minInclusive 10000 ;
+            sh:maxInclusive 99999 ;
+            sh:minCount 1 ;
+            sh:maxCount 1 ;
+            sh:datatype xsd:integer ;
+            sh:name "postal-code" ;
+            sh:order 3 ;
+            sh:name "postal code" ;
+            sh:description "Postal code."@en, "Postleitzahl."@de ],
+        [ skos:example "'DE', 'DEU'" ;
+            sh:datatype xsd:string ;
+            sh:description "Physischer Standort des Kopfquartals in ISO 3166-1 Alpha2, Alpha-3 oder numerisches Format."@de,
+                "Physical location of head quarter in ISO 3166-1 alpha2, alpha-3 or numeric format."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "country-name" ;
+            sh:order 4 ;
+            sh:path vcard:country-name ] ;
+    sh:targetClass vcard:Address .
+
+gax-validation:AgentShape a sh:NodeShape ;
+    sh:property [ skos:example "'example-given-name'" ;
+            sh:datatype xsd:string ;
+            sh:description "Die Eigenschaft V: Vornamen gibt den Vornamen Teil eines Personennamens an."@de,
+                "The v:given-name property specifies the given name part of a persons name."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "given-name" ;
+            sh:order 1 ;
+            sh:path vcard:given-name ],
+        [ skos:example "'example-family-name'" ;
+            sh:datatype xsd:string ;
+            sh:description "Das V-Name V: VERFAMILIE NAME GESEHEN SIE DEN STARMENNAME TEIL eines Personennamens."@de,
+                "The v:family-name property specifies the family name part of a persons name."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "family-name" ;
+            sh:order 2 ;
+            sh:path vcard:family-name ],
+        [ skos:example "'example-nickname'" ;
+            sh:datatype xsd:string ;
+            sh:description "Die V -Spitzname gibt den Spitznamen einer Person an."@de,
+                "The v:nickname property specifies the nickname of a person."@en ;
+            sh:maxCount 1 ;
+            sh:name "nickname" ;
+            sh:order 3 ;
+            sh:path vcard:nickname ],
+        [ skos:example "'Developer'" ;
+            sh:datatype xsd:string ;
+            sh:description "The v:position property specifies the position of a person."@de,
+                "The v:position property specifies the position of a person."@en ;
+            sh:maxCount 1 ;
+            sh:name "position" ;
+            sh:order 4 ;
+            sh:path vcard:position ],
+        [ skos:example "'example-Email'" ;
+            sh:datatype xsd:anyURI ;
+            sh:description "The v:email property specifies an email address."@de,
+                "The v:email property specifies an email address."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "email" ;
+            sh:order 5 ;
+            sh:path vcard:email ],
+        [ skos:example "'+49 030 12324567'" ;
+            sh:datatype xsd:string ;
+            sh:description "Die V: Tel -Eigenschaft gibt eine Telefonennummer an."@de,
+                "The v:tel property specifies a telefon number."@en ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:name "tel" ;
+            sh:order 6 ;
+            sh:path vcard:tel ],
+        [ skos:example "'Directorimage'" ;
+            sh:datatype xsd:string ;
+            sh:description "Die V: Image -Eigenschaft gibt ein Bild eine Person an."@de,
+                "The v:image property specifies an image a person."@en ;
+            sh:maxCount 1 ;
+            sh:name "image" ;
+            sh:order 7 ;
+            sh:path vcard:image ],
+        [ skos:example "'(ACME street 1, 12345 city, Germany)'" ;
+            sh:datatype xsd:string ;
+            sh:description "Die V: Adresseigenschaft gibt die Adresse einer Person an."@de,
+                "The v:address property specifies the address of a person."@en ;
+            sh:maxCount 1 ;
+            sh:name "address" ;
+            sh:order 8 ;
+            sh:path vcard:address ] ;
+    sh:targetClass vcard:Agent .
+
+ # sh:closed true ;
+ # sh:ignoredProperties ( rdf:type ) .

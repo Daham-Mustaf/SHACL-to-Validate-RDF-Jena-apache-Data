@@ -1,0 +1,421 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trusted-cloud: <http://example.com/vocabulary/trusted-cloud#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix gax-validation: <http://example.com/validation#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+#################################################################
+#    Classes
+# the vcard:Address and vcard:Agent are not explicitly defined as classes within the ontology.
+# Instead, they are used as resources in defining object properties and their values.
+# n the RDF data model, classes are typically defined explicitly,
+# while resources like vcard:Address and vcard:Agent are often predefined in external
+# ontologies or vocabularies, such as the vCard ontology.
+# These external ontologies provide reusable concepts and properties that can be used in other ontologies.
+#################################################################
+
+<http://example.com/vocabulary/trusted-cloud> rdf:type owl:Ontology .
+
+#################################################################
+#    ProviderLegalInformation
+#################################################################
+
+
+### Property: trusted-cloud:typeOfApplication
+trusted-cloud:typeOfApplication rdf:type owl:DatatypeProperty ;
+                               rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "Type of Application offered."@en, "Art der angebotenen Anwendung."@de ;
+                               rdfs:label "type of application" ;
+                               owl:equivalentClass [
+                                   rdf:type owl:Restriction ;
+                                   owl:onProperty trusted-cloud:typeOfApplication ;
+                                   owl:hasValue "Cloud Service"
+                               ], [
+                                   rdf:type owl:Restriction ;
+                                   owl:onProperty trusted-cloud:typeOfApplication ;
+                                   owl:hasValue "Cloud Consultants & Cloud Service"
+                               ] .
+
+### Property: trusted-cloud:itDepartmentContact
+trusted-cloud:itDepartmentContact rdf:type owl:ObjectProperty ;
+                                  rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                                  rdfs:range vcard:Agent ;
+                                  rdfs:comment "A contact within an organization to contact for technical purposes."@en, "Ein Kontakt innerhalb einer Organisation, um technische Zwecke zu kontaktieren."@de ;
+                                  rdfs:label "it department contact" .
+
+### Property: trusted-cloud:legalContact
+trusted-cloud:legalContact rdf:type owl:ObjectProperty ;
+                            rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                            rdfs:range vcard:Agent ;
+                            rdfs:comment "A contact within an organization to contact for data protection purposes."@en, "Ein Kontakt innerhalb einer Organisation, um sich für Datenschutzzwecke zu wenden."@de ;
+                            rdfs:label "legal contact" .
+
+### Property: trusted-cloud:description
+trusted-cloud:description rdf:type owl:DatatypeProperty ;
+                          rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Description of the organization."@en, "Beschreibung der Organisation."@de ;
+                          rdfs:label "description" .
+
+### Property: trusted-cloud:legalName
+trusted-cloud:legalName rdf:type owl:DatatypeProperty ;
+                       rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Legally binding name."@en, "Rechtsbindender Name."@de ;
+                       rdfs:label "legal name" .
+
+
+### Property: trusted-cloud:emailAddress
+trusted-cloud:emailAddress rdf:type owl:DatatypeProperty ;
+                          rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "The email address. This field allows arbitrary strings."@en, "Die E-Mail-Adresse. Dieses Feld erlaubt beliebige Zeichenketten."@de ;
+                          rdfs:label "email address" .
+
+### Property: trusted-cloud:legalForm
+trusted-cloud:legalForm rdf:type owl:DatatypeProperty ;
+                       rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Legal form of organization."@en, "Legal form of organization."@de ;
+                       rdfs:label "legal form" .
+
+### Property: trusted-cloud:registrationNumber
+trusted-cloud:registrationNumber rdf:type owl:DatatypeProperty ;
+                                rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                                rdfs:range xsd:string ;
+                                rdfs:comment "Country’s registration number which identifies one specific company."@en, "Country’s registration number which identifies one specific company."@de ;
+                                rdfs:label "registration number" .
+
+### Property: trusted-cloud:headquarterAddress
+trusted-cloud:headquarterAddress rdf:type owl:ObjectProperty ;
+                                 rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                                 rdfs:range vcard:Address ;
+                                 rdfs:comment "Address of head office or main subsidiary."@en, "Adresse der Hauptsitz oder der Haupt Tochtergesellschaft."@de ;
+                                 rdfs:label "headquarter address" .
+
+### Property: trusted-cloud:webAddress
+trusted-cloud:webAddress rdf:type owl:DatatypeProperty ;
+                        rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                        rdfs:range xsd:anyURI ;
+                        rdfs:comment "Resolvable URL to the web page of this organization."@en, "Resolvable URL to the web page of this organization."@de ;
+                        rdfs:label "web address" .
+
+### Property: trusted-cloud:logo
+trusted-cloud:logo rdf:type owl:DatatypeProperty ;
+                   rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                   rdfs:range xsd:anyURI ;
+                   rdfs:comment "Resolvable URL to the logo of this organization."@en, "Auflösbare URL an das Logo dieser Organisation."@de ;
+                   rdfs:label "logo" .
+
+### Property: trusted-cloud:vatNumber
+trusted-cloud:vatNumber rdf:type owl:DatatypeProperty ;
+                        rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Organization’s VAT / sales tax ID number. Either vatNumber or registrationNumber has to be set."@en, "Organization’s VAT / sales tax ID number. Either vatNumber or registrationNumber has to be set."@de ;
+                        rdfs:label "vat number" .
+
+### Property: trusted-cloud:registrationDate
+trusted-cloud:registrationDate rdf:type owl:DatatypeProperty ;
+                             rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                             rdfs:range xsd:dateTimeStamp ;
+                             rdfs:comment "Date of the legal registration."@en, "Datum der rechtlichen Registrierung."@de ;
+                             rdfs:label "registration date" .
+
+### Property: trusted-cloud:sme
+trusted-cloud:sme rdf:type owl:DatatypeProperty ;
+                  rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:comment "Is the company a 'small or medium-sized' company?"@en, "Is the company a 'small or medium-sized' company?"@de ;
+                  rdfs:label "sme" .
+
+### Property: trusted-cloud:managingDirector
+trusted-cloud:managingDirector rdf:type owl:ObjectProperty ;
+                              rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                              rdfs:range vcard:Agent ;
+                              rdfs:comment "Managing director or legal guardian of the organization."@en, "Managing director or legal guardian of the organization."@de ;
+                              rdfs:label "managing director" .
+
+### Property: trusted-cloud:mainContact
+trusted-cloud:mainContact rdf:type owl:ObjectProperty ;
+                         rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                         rdfs:range vcard:Agent ;
+                         rdfs:comment "Main contact of the organization."@en, "Hauptkontakt der Organisation."@de ;
+                         rdfs:label "main contact" .
+
+### Property: trusted-cloud:dataProtectionOfficer
+trusted-cloud:dataProtectionOfficer rdf:type owl:ObjectProperty ;
+                                  rdfs:domain trusted-cloud:ProviderLegalInformation ;
+                                  rdfs:range vcard:Agent ;
+                                  rdfs:comment "A contact within an organization to contact for data protection purposes."@en, "Ein Kontakt innerhalb einer Organisation, um sich für Datenschutzzwecke zu wenden."@de ;
+                                  rdfs:label "data protection officer" .
+
+#################################################################
+#    Agent
+#################################################################
+
+
+### Property: vcard:given-name
+vcard:given-name rdf:type owl:DatatypeProperty ;
+                 rdfs:domain vcard:Agent ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The property specifies the given name part of a person's name."@en ;
+                 rdfs:label "given-name"@en .
+
+### Property: vcard:family-name
+vcard:family-name rdf:type owl:DatatypeProperty ;
+                  rdfs:domain vcard:Agent ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "The property specifies the family name part of a person's name."@en ;
+                  rdfs:label "family-name"@en .
+
+### Property: vcard:nickname
+vcard:nickname rdf:type owl:DatatypeProperty ;
+               rdfs:domain vcard:Agent ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The property specifies the nickname of a person."@en ;
+               rdfs:label "nickname"@en .
+
+### Property: vcard:position
+vcard:position rdf:type owl:DatatypeProperty ;
+               rdfs:domain vcard:Agent ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The property specifies the position of a person."@en ;
+               rdfs:label "position"@en .
+
+### Property: vcard:email
+vcard:email rdf:type owl:DatatypeProperty ;
+            rdfs:domain vcard:Agent ;
+            rdfs:range xsd:anyURI ;
+            rdfs:comment "The property specifies an email address."@en ;
+            rdfs:label "email"@en .
+
+### Property: vcard:tel
+vcard:tel rdf:type owl:DatatypeProperty ;
+          rdfs:domain vcard:Agent ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The property specifies a telephone number."@en ;
+          rdfs:label "tel"@en .
+
+### Property: vcard:image
+vcard:image rdf:type owl:DatatypeProperty ;
+            rdfs:domain vcard:Agent ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The property specifies an image of a person."@en ;
+            rdfs:label "image"@en .
+
+### Property: vcard:address
+vcard:address rdf:type owl:DatatypeProperty ;
+              rdfs:domain vcard:Agent ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The property specifies the address of a person."@en ;
+              rdfs:label "address"@en .
+
+#################################################################
+#    Address
+#################################################################
+### Class: vcard:Address
+#vcard:Address rdf:type owl:Class ;
+             # rdfs:label "Address" ;
+             # rdfs:comment "Represents a postal address."@en .
+
+### Property: vcard:street-address
+vcard:street-address rdf:type owl:DatatypeProperty ;
+                     rdfs:domain vcard:Address ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "The property specifies the street address of a postal address."@en ;
+                     rdfs:label "street-address"@en .
+
+### Property: vcard:number
+vcard:number rdf:type owl:DatatypeProperty ;
+             rdfs:domain vcard:Address ;
+             rdfs:range xsd:integer ;
+             rdfs:comment "The property specifies the street number of a postal address."@en ;
+             rdfs:label "number"@en .
+
+### Property: vcard:postal-code
+vcard:postal-code rdf:type owl:DatatypeProperty ;
+                  rdfs:domain vcard:Address ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "Postal code."@en, "Postleitzahl."@de ;
+                  rdfs:label "postal-code"@en .
+
+### Property: vcard:country-name
+vcard:country-name rdf:type owl:DatatypeProperty ;
+                   rdfs:domain vcard:Address ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Physical location of headquarter in ISO 3166-1 alpha2, alpha-3, or numeric format."@en ;
+                   rdfs:label "country-name"@en .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.com/vocabulary/trusted-cloud#ExampleInstance
+trusted-cloud:ExampleInstance a trusted-cloud:ProviderLegalInformation ;
+                             trusted-cloud:typeOfApplication "Cloud Service"^^xsd:string ;
+                             trusted-cloud:legalName "ABC"^^xsd:string ;
+                             trusted-cloud:emailAddress "Company@de.com"^^xsd:string ;
+                             trusted-cloud:vatNumber "DE999999999"^^xsd:string ;
+                             trusted-cloud:registrationDate "2021-10-18T12:00:00+01:00"^^xsd:dateTimeStamp ;
+                             trusted-cloud:sme "true"^^xsd:boolean ;
+                             trusted-cloud:legalForm "GmbH"^^xsd:string ;
+                             trusted-cloud:webAddress "http://www.acme.com"^^xsd:anyURI ;
+                             trusted-cloud:description "A company making everything"^^xsd:string ;
+                             trusted-cloud:mainContact [
+                                                        rdf:type vcard:Agent ;
+                                                        vcard:given-name "Emily"^^xsd:string ;
+                                                        vcard:family-name "Anderson"^^xsd:string ;
+                                                        vcard:nickname "EA"^^xsd:string ;
+                                                        vcard:position "Sales Manager"^^xsd:string ;
+                                                        vcard:email "emily.anderson@acme.com"^^xsd:anyURI ;
+                                                        vcard:tel "49-222222222"^^xsd:string ;
+                                                        vcard:image "main-contact-image"^^xsd:string ;
+                                                        vcard:address "(ACME street 5, 77777 city, Germany)"^^xsd:string ;
+                             ] ;
+                             trusted-cloud:registrationNumber "DEK1234R.HRB123456"^^xsd:string ;
+                             trusted-cloud:managingDirector [ rdf:type vcard:Agent ;
+                                                               vcard:given-name "John"^^xsd:string ;
+                                                               vcard:family-name "Doe"^^xsd:string ;
+                                                               vcard:nickname "Doedo"^^xsd:string ;
+                                                               vcard:position "Director"^^xsd:string ;
+                                                               vcard:email "john.doe@acme.com"^^xsd:anyURI ;
+                                                               vcard:tel "49-123456789"^^xsd:string ;
+                                                               vcard:image "Directorimage"^^xsd:string;
+                                                               vcard:address "(ACME street 1, 12345 city, Germany)"^^xsd:string;                                                                                                                    vcard:address "(ACME street 1, 12345 city, Germany)"^^xsd:string;
+                                                                                        ] ;
+                             trusted-cloud:headquarterAddress [ rdf:type vcard:Address ;
+                                                                vcard:street-address "Main Street 123"^^xsd:string ;
+                                                                vcard:number 400;
+                                                                vcard:postal-code 50000;
+                                                                vcard:country-name "DE"^^xsd:string
+                                                                                           ] ;
+                             trusted-cloud:logo "http://www.acme.com/logo"^^xsd:anyURI ;
+                             trusted-cloud:itDepartmentContact [ rdf:type vcard:Agent ;
+                                                                     vcard:given-name "Tom"^^xsd:string ;
+                                                                     vcard:family-name "Mustermann"^^xsd:string ;
+                                                                     vcard:nickname "nickname"^^xsd:string ;
+                                                                     vcard:position "Developer"^^xsd:string ;
+                                                                     vcard:email "tom.mustermann@acme.com"^^xsd:anyURI ;
+                                                                     vcard:tel "49-123456789"^^xsd:string ;
+                                                                     vcard:image "image"^^xsd:string;
+                                                                     vcard:address "(ACME street 1, 12345 city, Germany)"^^xsd:string;
+                                                                     ];
+                             trusted-cloud:legalContact [
+                                                        rdf:type vcard:Agent ;
+                                                        vcard:given-name "Michael"^^xsd:string ;
+                                                        vcard:family-name "Johnson"^^xsd:string ;
+                                                        vcard:nickname "MJ"^^xsd:string ;
+                                                        vcard:position "Legal Counsel"^^xsd:string ;
+                                                        vcard:email "michael.johnson@acme.com"^^xsd:anyURI ;
+                                                        vcard:tel "49-999999999"^^xsd:string ;
+                                                        vcard:image "profile-pic"^^xsd:string ;
+                                                        vcard:address "(ACME street 4, 54321 city, Germany)"^^xsd:string ;
+                                                 ] ;
+                             trusted-cloud:dataProtectionOfficer [
+                                                         rdf:type vcard:Agent ;
+                                                         vcard:given-name "Michael"^^xsd:string ;
+                                                         vcard:family-name "Johnson"^^xsd:string ;
+                                                         vcard:nickname "MJ"^^xsd:string ;
+                                                         vcard:position "Data Protection Officer"^^xsd:string ;
+                                                         vcard:email "michael.johnson@acme.com"^^xsd:anyURI ;
+                                                         vcard:tel "49-777777777"^^xsd:string ;
+                                                         vcard:image "dp-officer-image"^^xsd:string ;
+                                                         vcard:address "(ACME street 4, 55555 city, Germany)"^^xsd:string ;
+                                                     ] .
+
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.com/vocabulary/trusted-cloud#ExampleInstance
+<trusted-cloud:ExampleInstance> a trusted-cloud:ProviderLegalInformation ;
+                             trusted-cloud:legalName "ABC"^^xsd:string ;
+                             trusted-cloud:legalForm "GmbH"^^xsd:string ;
+                             trusted-cloud:headquarterAddress trusted-cloud:HeadquarterAddress ;
+                             trusted-cloud:webAddress "http://www.acme.com"^^xsd:anyURI;
+                             trusted-cloud:registrationDate "2021-10-18T12:00:00+01:00"^^xsd:dateTimeStamp ;
+                             trusted-cloud:sme "true"^^xsd:boolean ;
+                             trusted-cloud:managingDirector trusted-cloud:ManagingDirector ;
+                             trusted-cloud:mainContact trusted-cloud:MainContact ;
+                             trusted-cloud:dataProtectionOfficer trusted-cloud:DataProtectionOfficer ;
+
+                             trusted-cloud:typeOfApplication "Cloud Service"^^xsd:string ;
+                             trusted-cloud:emailAddress "Company@de.com"^^xsd:string ;
+                             trusted-cloud:vatNumber "DE999999999"^^xsd:string ;
+                             trusted-cloud:sme "true"^^xsd:boolean ;
+                             trusted-cloud:description "A company making everything"^^xsd:string ;
+                             trusted-cloud:registrationNumber "DEK1234R.HRB123456"^^xsd:string ;
+                             trusted-cloud:logo "http://www.acme.com/logo"^^xsd:anyURI ;
+                             trusted-cloud:itDepartmentContact trusted-cloud:ITDepartmentContact ;
+                             trusted-cloud:legalContact trusted-cloud:LegalContact .
+
+### Headquarter Address
+trusted-cloud:HeadquarterAddress rdf:type vcard:Address ;
+                                vcard:street-address "Main Street 123"^^xsd:string ;
+                                vcard:number 400 ;
+                                vcard:postal-code 50000 ;
+                                vcard:country-name "DE"^^xsd:string .
+
+### Managing Director
+trusted-cloud:ManagingDirector rdf:type vcard:Agent ;
+                              vcard:given-name "John"^^xsd:string ;
+                              vcard:family-name "Doe"^^xsd:string ;
+                              vcard:email "john.doe@acme.com"^^xsd:anyURI ;
+                              vcard:tel "49-123456789"^^xsd:string ;
+
+                              vcard:nickname "Doedo"^^xsd:string ;
+                              vcard:position "Director"^^xsd:string ;
+                              vcard:image "Directorimage"^^xsd:string ;
+                              vcard:address "(ACME street 1, 12345 city, Germany)"^^xsd:string .
+
+### Main Contact
+trusted-cloud:MainContact rdf:type vcard:Agent ;
+                         vcard:given-name "Emily"^^xsd:string ;
+                         vcard:family-name "Anderson"^^xsd:string ;
+                         vcard:email "emily.anderson@acme.com"^^xsd:anyURI ;
+                         vcard:tel "49-222222222"^^xsd:string ;
+                         vcard:nickname "EA"^^xsd:string ;
+                         vcard:position "Sales Manager"^^xsd:string ;
+                         vcard:image "main-contact-image"^^xsd:string ;
+                         vcard:address "(ACME street 5, 77777 city, Germany)"^^xsd:string .
+
+### Data Protection Officer
+trusted-cloud:DataProtectionOfficer rdf:type vcard:Agent ;
+                                  vcard:given-name "Michael"^^xsd:string ;
+                                  vcard:family-name "Johnson"^^xsd:string ;
+                                  vcard:email "michael.johnson@acme.com"^^xsd:anyURI ;
+                                  vcard:tel "49-777777777"^^xsd:string ;
+                                  vcard:nickname "MJ"^^xsd:string ;
+                                  vcard:position "Data Protection Officer"^^xsd:string ;
+                                  vcard:image "dp-officer-image"^^xsd:string ;
+                                  vcard:address "(ACME street 4, 55555 city, Germany)"^^xsd:string .
+
+### IT Department Contact
+trusted-cloud:ITDepartmentContact rdf:type vcard:Agent ;
+                                vcard:given-name "Tom"^^xsd:string ;
+                                vcard:family-name "Mustermann"^^xsd:string ;
+                                vcard:email "tom.mustermann@acme.com"^^xsd:anyURI ;
+                                vcard:tel "49-123456789"^^xsd:string ;
+                                vcard:nickname "nickname"^^xsd:string ;
+                                vcard:position "Developer"^^xsd:string ;
+                                vcard:image "image"^^xsd:string ;
+                                vcard:address "(ACME street 1, 12345 city, Germany)"^^xsd:string .
+
+### Legal Contact
+trusted-cloud:LegalContact rdf:type vcard:Agent ;
+                          vcard:given-name "Michael"^^xsd:string ;
+                          vcard:family-name "Johnson"^^xsd:string ;
+                          vcard:email "michael.johnson@acme.com"^^xsd:anyURI ;
+                          vcard:tel "49-999999999"^^xsd:string ;
+                          vcard:nickname "MJ"^^xsd:string ;
+                          vcard:position "Legal Counsel"^^xsd:string ;
+                          vcard:image "profile-pic"^^xsd:string ;
+                          vcard:address "(ACME street 4, 54321 city, Germany)"^^xsd:string .
+
