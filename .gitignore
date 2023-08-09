@@ -9,3 +9,6 @@ target/
 
 # Ignore configuration files
 config.properties
+
+.project
+.classpath
