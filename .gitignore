@@ -1,0 +1,11 @@
+# Ignore compiled files
+target/
+
+# Ignore IDE-specific files
+.idea/
+
+# Ignore temporary files
+*.tmp
+
+# Ignore configuration files
+config.properties
