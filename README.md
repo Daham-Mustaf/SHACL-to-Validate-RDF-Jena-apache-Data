@@ -33,6 +33,10 @@ The SHACL Validator Dockerized project provides a convenient way to run the SHAC
 2. Build the Docker image using the provided Dockerfile. Run the following command:
    ```sh
    docker build -t shacl-validator .
+3. Once the image is built, you can run a container from it:
+   ```sh
+   docker run -it --rm shacl-validator
+
 ## Usage
 
 1. Save your data graph file `src/main/data` directory of the project.
