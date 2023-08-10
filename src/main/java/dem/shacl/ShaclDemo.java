@@ -20,7 +20,7 @@ class ShaclDemo {
 		/*Task 3
 		* reads both the instance and SHACL shape file.
 		* */
-		Model modelInstance = validator.loadModel("providerLegalInformation.ttl");
+//		Model modelInstance = validator.loadModel("providerLegalInformation.ttl");
 //		validator.printModel(modelInstance);
 		//   load graph from file
 //		Graph graphModel = validator.loadGraph("providerLegalInformation.ttl");
@@ -46,10 +46,5 @@ class ShaclDemo {
 //        List<String> dataModelNames = Arrays.asList("person.ttl", "providerLegalInformation.ttl", "asset_A_S.ttl");
 //        List<String> shapeNames = Arrays.asList("personShape.ttl", "provider-legal-informationShape.ttl", "aas_shacl.ttl");
 //        validator.validateList(dataModelNames, shapeNames, true);
-	}
-
-	private String getAbsolutePath(String relativePath) {
-		Path currentPath = Paths.get("").toAbsolutePath();
-		return currentPath.resolve(relativePath).toString();
 	}
 }

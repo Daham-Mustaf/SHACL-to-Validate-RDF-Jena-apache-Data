@@ -43,5 +43,36 @@
         </dependency>
 
     </dependencies>
+        <build>
+            <finalName>SHACL-Validator</finalName>
+                <plugins>
+<!--                    <plugin>-->
+<!--                        <groupId>org.codehaus.mojo</groupId>-->
+<!--                        <artifactId>exec-maven-plugin</artifactId>-->
+<!--                        <version>3.1.0</version>-->
+<!--                        <configuration>-->
+<!--                            <mainClass>dem.shacl.ShaclDemo</mainClass> &lt;!&ndash; Make sure this is correct &ndash;&gt;-->
+<!--                        </configuration>-->
+<!--                    </plugin>-->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <version>3.2.0</version>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <mainClass>dem.shacl.ShaclDemo</mainClass>
+                                </manifest>
+                            </archive>
+                        </configuration>
+                    </plugin>
+
+                </plugins>
+
+        </build>
+
+
+
+
 
 </project>
