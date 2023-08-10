@@ -1,17 +1,41 @@
-# SHACL Validator Jena-apache to RDF Data
+# SHACL Validator Jena-apache to RDF Data Dockerized
 
-The SHACL Validator is a Java application that validates a data graph against a shape graph using the SHACL (Shapes Constraint Language) specification. It utilizes the Apache Jena library for RDF processing and the TopBraid SHACL API for validation.
+This repository contains a Dockerized version of the SHACL Validator tool that uses Apache Jena.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Output](#output)
+- [Contributing](#contributing)
+
+## Introduction
+
+The SHACL Validator is a Java application that validates a data graph against a shape graph using the SHACL (Shapes Constraint Language) specification. It utilizes the Apache Jena library for RDF processing SHACL API for validation.
+The SHACL Validator Dockerized project provides a convenient way to run the SHACL Validator tool using Apache Jena in a Docker container.
 
 ## Prerequisites
+- Java Development Kit (JDK) 8 or higher.
+- Apache Maven.
+- Docker: Make sure you have Docker installed on your machine.
 
-- Java Development Kit (JDK) 8 or higher
-- Apache Maven
+## Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/Daham-Mustaf/SHACL-to-Validate-RDF-Jena-apache-Data.git
+
 
 ## Usage
 
-1. Save your data graph file and shape graph file in the `src/main/resources/` directory of the project.
-2. Run the `ShaclValidation` class as a Java application.
-3. The validation report will be generated and saved in the `src/main/reports/` directory.
+1. Save your data graph file `src/main/data` directory of the project.
+2. Save your shape graph file `src/main/shape` directory of the project.
+3. Run the `ShaclDemo` class as a Java application.
+4. The validation report will be generated and saved in the `src/main/reports/` directory.
 
 ## Configuration
 
@@ -19,8 +43,6 @@ You can modify the file paths by updating the following variables in the `ShaclV
 
 - `dataFileName`: The name of the data graph file.
 - `shapeFileName`: The name of the shape graph file.
-
-Please ensure that both files are in the `src/main/resources/` directory or provide the correct relative path if they are located elsewhere.
 
 ## Output
 
