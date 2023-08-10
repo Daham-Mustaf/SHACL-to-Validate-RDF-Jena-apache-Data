@@ -28,8 +28,11 @@ The SHACL Validator Dockerized project provides a convenient way to run the SHAC
 
    ```sh
    git clone https://github.com/Daham-Mustaf/SHACL-to-Validate-RDF-Jena-apache-Data.git
+   cd SHACL-to-Validate-RDF-Jena-apache-Data
 
-
+2. Build the Docker image using the provided Dockerfile. Run the following command:
+   ```sh
+   docker build -t shacl-validator .
 ## Usage
 
 1. Save your data graph file `src/main/data` directory of the project.
