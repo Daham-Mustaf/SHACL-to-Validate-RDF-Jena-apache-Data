@@ -30,3 +30,4 @@ COPY src/main/shape /app/src/main/shape
 
 # Specify the command to run your Java application
 CMD ["java", "-cp", "SHACL-Validator.jar:./lib/*", "dem.shacl.ShaclDemo"]
+
