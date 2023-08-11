@@ -1,4 +1,4 @@
-# SHACL Validator Jena-apache to RDF Data Dockerized
+# SHACL Validator Jena-apache to RDF Data & Dockerizing 
 
 This repository contains a Dockerized version of the SHACL Validator tool that uses Apache Jena.
 
